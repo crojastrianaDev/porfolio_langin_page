@@ -8,8 +8,8 @@
 }
 
 .icon_home {
-  width: 65px;
-  height: 91px;
+  width: 50px;
+  height: 50px;
   flex-shrink: 0;
 }
 .navItem {
@@ -17,8 +17,8 @@
   text-align: right;
 
   /* Boton1 */
-  font-family: Outfit;
-  font-size: 27px;
+  font-family: Outfit, sans-serif;
+  font-size: 1.688em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -33,9 +33,26 @@ li:hover {
   margin-right: 2.5em;
 }
 a {
-  font-family: Outfit;
+  font-family: Outfit, sans-serif;
   line-height: normal;
   font-style: italic;
   line-height: normal;
   font-size: 1.688em;
+}
+
+@media btnHome, only screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+  .layout {
+    margin-right: 0em;
+    text-align: start;
+  }
+  .ul {
+    text-align: start;
+  }
+  .fixed-top {
+    height: initial;
+    margin-bottom: 0em;
+  }
 }

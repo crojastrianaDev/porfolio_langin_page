@@ -1,28 +1,36 @@
 .card {
   background: var(--Tono1, #fef0d3);
   border-color: #fef0d3;
+  width: 100%;
+  height: 100%;
+}
+.card-body {
+  padding: 0;
+}
+.navbar {
+  padding: 0;
 }
 .card-title,
 p,
 h5 {
   color: var(--Tono2, #fd6d0d);
-  font-family: Outfit;
-  font-size: 3.125em;
+  font-family: Outfit, sans-serif;
+  /*font-size: 3.125em;*/
   font-style: normal;
-  font-weight: 43.75em;
-  line-height: 1em;
-  display: block;
+  font-weight: 700;
+  /*line-height: 1em;*/
+  /*display: block;*/
 }
 .card-text {
   color: #848382;
-  font-family: Outfit;
-  font-size: 1.5em;
+  font-family: Outfit, sans-serif;
+  /*font-size: 1.5em;*/
   font-style: normal;
-  font-weight: 25em;
+  font-weight: 400;
 }
 .card-title-container {
   padding: 0em;
-  margin-top: 8em;
+  margin-top: 6em;
   display: flex;
   width: 34.688em;
   height: 16.063em;
@@ -59,7 +67,7 @@ h4 {
   text-align: center;
 
   /* Tit1 */
-  font-family: Outfit;
+  font-family: Outfit, sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -70,6 +78,13 @@ h4 {
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
+  display: flex;
+  padding: 30px 60px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .now {
   border-radius: 0.8em;
@@ -88,10 +103,9 @@ h4 {
 .p-btn {
   color: var(--Tono1, #fef0d3);
   text-align: center;
-  padding: 0.1em 0.1em;
   /* Boton1 */
-  font-family: Outfit;
-  font-size: 27px;
+  font-family: Outfit, sans-serif;
+  font-size: 1.688em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -109,9 +123,41 @@ h4 {
   text-align: center;
 
   /* Lla1 */
-  font-family: Outfit;
+  font-family: Outfit, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 29px; /* 145% */
+}
+@media banner, only screen and (max-width: 767px) {
+  .card {
+    height: initial;
+    margin: 0 0 0 0;
+  }
+  .card-body {
+    margin-top: 0;
+    height: initial;
+    margin-bottom: 0;
+    padding: 0 0 0 0;
+  }
+  .container-fluid {
+    height: initial;
+  }
+  .layout {
+    margin-top: 0em;
+    width: 100%;
+    height: initial;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0em;
+  }
+  .init {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1em;
+  }
 }

@@ -26,13 +26,19 @@ img {
   flex-shrink: 0;
 }
 .icon {
-  width: 59px;
-  height: 42px;
+  width: 50px;
+  height: 40px;
   flex-shrink: 0;
 }
 .icon_two {
-  width: 60px;
-  height: 62px;
+  width: 50px;
+  height: 40px;
   flex-shrink: 0;
   margin-left: 1em;
+}
+.nav {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
 }

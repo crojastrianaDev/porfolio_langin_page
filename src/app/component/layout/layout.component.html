@@ -1,13 +1,13 @@
-<app-header></app-header>
-<div class="home">
+<app-header (sectionClicked)="scrollToSection($event)"></app-header>
+<section id="home">
   <app-banner></app-banner>
-</div>
-<div class="works">
+</section>
+<section id="works">
   <app-works></app-works>
-</div>
-<div class="about">
+</section>
+<section id="about">
   <app-about></app-about>
-</div>
-<div class="contact">
+</section>
+<section id="contact">
   <app-footer></app-footer>
-</div>
+</section>

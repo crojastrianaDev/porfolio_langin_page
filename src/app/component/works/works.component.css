@@ -1,0 +1,50 @@
+.icon_init {
+  width: 6.194em;
+  height: 3.685em;
+  transform: rotate(-11.778deg);
+  flex-shrink: 0;
+}
+
+.nav-link {
+  color: var(--Tono2, #fd6d0d);
+  font-family: Outfit, sans-serif;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+a {
+  transition: background-color 0.5s;
+}
+a:hover {
+  border-bottom: 1px solid #fd6d0d;
+}
+.icon_finish {
+  width: 29.762em;
+  height: 3.09em;
+  flex-shrink: 0;
+}
+.icon_right {
+  width: 158.983px;
+  height: 355.043px;
+  flex-shrink: 0;
+}
+.icon_left {
+  width: 158.983px;
+  height: 355.043px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  .icon_init {
+    width: 1em;
+    height: 2em;
+    transform: rotate(-41.778deg);
+    flex-shrink: 0;
+  }
+}

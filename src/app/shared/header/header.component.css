@@ -1,0 +1,58 @@
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: var(--Tono1, #fef0d3);
+}
+
+.icon_home {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+.navItem {
+  color: var(--Tono2, #fd6d0d);
+  text-align: right;
+
+  /* Boton1 */
+  font-family: Outfit, sans-serif;
+  font-size: 1.688em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+li {
+  transition: background-color 0.5s;
+}
+li:hover {
+  border-bottom: 1px solid #fd6d0d;
+}
+.layout {
+  margin-right: 1em;
+}
+a {
+  font-family: Outfit, sans-serif;
+  line-height: normal;
+  font-style: italic;
+  line-height: normal;
+  font-size: 1.688em;
+}
+
+@media btnHome, only screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+  .layout {
+    margin-right: 0em;
+    text-align: start;
+  }
+  .ul {
+    text-align: start;
+  }
+  .fixed-top {
+    height: initial;
+    margin-bottom: 0em;
+  }
+}

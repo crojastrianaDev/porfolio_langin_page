@@ -20,6 +20,8 @@ h5 {
   font-weight: 700;
   /*line-height: 1em;*/
   /*display: block;*/
+
+  margin-bottom: 0;
 }
 .card-text {
   color: #848382;
@@ -68,7 +70,7 @@ h4 {
 
   /* Tit1 */
   font-family: Outfit, sans-serif;
-  font-size: 50px;
+  font-size: 2.5em;
   font-style: normal;
   font-weight: 700;
   line-height: 64px; /* 128% */
@@ -79,7 +81,7 @@ h4 {
   justify-content: center;
   flex-shrink: 0;
   display: flex;
-  padding: 30px 60px;
+  padding: 0px 60px;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -93,7 +95,7 @@ h4 {
 }
 .btn-layout {
   display: flex;
-  padding: 1.875em 3.75em;
+  padding: 1em 3.75em;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -109,6 +111,7 @@ h4 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  padding: 0.3em;
 }
 .text-layout {
   display: flex;
@@ -124,21 +127,28 @@ h4 {
 
   /* Lla1 */
   font-family: Outfit, sans-serif;
-  font-size: 20px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: 29px; /* 145% */
+  padding: 0;
+  margin: 0;
 }
 @media banner, only screen and (max-width: 767px) {
   .card {
     height: initial;
     margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .card-body {
     margin-top: 0;
     height: initial;
     margin-bottom: 0;
     padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
   }
   .container-fluid {
     height: initial;
@@ -159,5 +169,8 @@ h4 {
     justify-content: center;
     flex-shrink: 0;
     margin-top: 1em;
+  }
+  .card-title-container {
+    text-align: center;
   }
 }

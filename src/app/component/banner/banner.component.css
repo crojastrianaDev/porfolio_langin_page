@@ -95,7 +95,7 @@ h4 {
 }
 .btn-layout {
   display: flex;
-  padding: 1em 3.75em;
+  padding: 0.1em 3.75em;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -107,7 +107,7 @@ h4 {
   text-align: center;
   /* Boton1 */
   font-family: Outfit, sans-serif;
-  font-size: 1.688em;
+  font-size: 1.2em;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -134,7 +134,7 @@ h4 {
   padding: 0;
   margin: 0;
 }
-@media banner, only screen and (max-width: 767px) {
+@media screen and (max-width: 812px) {
   .card {
     height: initial;
     margin: 0 0 0 0;
@@ -172,5 +172,50 @@ h4 {
   }
   .card-title-container {
     text-align: center;
+  }
+  .btn-responsive {
+    padding-left: 30px;
+  }
+  h4 {
+    color: var(--Tono2, #fd6d0d);
+    text-align: center;
+    /* Tit1 */
+    font-family: Outfit, sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2em; /* 128% */
+  }
+  .p-btn {
+    color: var(--Tono1, #fef0d3);
+    text-align: center;
+    /* Boton1 */
+    font-family: Outfit, sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0.3em;
+  }
+  .btn-responsive {
+    padding-left: 4em;
+  }
+  .p-text {
+    color: #848382;
+    text-align: center;
+
+    /* Lla1 */
+    font-family: Outfit, sans-serif;
+    font-size: 0.6em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; /* 145% */
+    padding: 0;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 813px) and (max-width: 1000px) {
+  .btn-responsive {
+    padding-left: 5em;
   }
 }

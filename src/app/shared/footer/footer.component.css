@@ -60,8 +60,10 @@ span {
   }
   .icon {
     margin-top: 1em;
+    width: 40px;
   }
   .icon_two {
     margin-top: 0em;
+    width: 40px;
   }
 }

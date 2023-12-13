@@ -4,7 +4,6 @@
   transform: rotate(-11.778deg);
   flex-shrink: 0;
 }
-
 .nav-link {
   color: var(--Tono2, #fd6d0d);
   font-family: Outfit, sans-serif;
@@ -15,6 +14,23 @@
   padding-left: 0px;
   padding-right: 0px;
 }
+.nav-container {
+  position: sticky;
+  top: 0;
+  height: 100vh; /* Ajusta según sea necesario */
+  width: 100%; /* O ajusta según sea necesario */
+  overflow-y: auto;
+  background-color: #fff; /* Fondo de la barra de navegación */
+  z-index: 1000;
+}
+
+/*.navbar-container .flex-column {
+  margin-top: 1em;
+  position: fixed;
+  top: 0;
+  z-index: 1; 
+  overflow-x: hidden; 
+}*/
 a {
   transition: background-color 0.5s;
 }
@@ -22,18 +38,34 @@ a:hover {
   border-bottom: 1px solid #fd6d0d;
 }
 .icon_finish {
-  width: 29.762em;
-  height: 3.09em;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.icon_finish svg {
+  max-width: 100%;
+  height: auto;
+}
+.container-fluid {
+  position: relative;
 }
 .icon_right {
   width: 158.983px;
   height: 355.043px;
   flex-shrink: 0;
+  position: absolute;
+  top: 0; /* Puedes ajustar la posición vertical según tus necesidades */
+  right: 0; /* Colócalo a la derecha */
 }
 .icon_left {
   width: 158.983px;
   height: 355.043px;
+  flex-shrink: 0;
+}
+.works_layout {
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
 }
 

@@ -57,16 +57,25 @@ a:hover {
   position: absolute;
   top: 0; /* Puedes ajustar la posición vertical según tus necesidades */
   right: 0; /* Colócalo a la derecha */
+  padding-top: 3.75em;
 }
 .icon_left {
   width: 158.983px;
   height: 355.043px;
   flex-shrink: 0;
+  padding-left: 0.625em;
 }
 .works_layout {
   width: 100%;
   height: 100%;
   flex-shrink: 0;
+}
+.products {
+  padding-left: 5em;
+  padding-top: 0.625em;
+}
+.right {
+  padding-right: 1.5em;
 }
 
 @media screen and (max-width: 767px) {
@@ -74,9 +83,19 @@ a:hover {
     display: none;
   }
   .icon_init {
-    width: 1em;
-    height: 2em;
-    transform: rotate(-41.778deg);
-    flex-shrink: 0;
+    display: none;
+  }
+  .icon_left {
+    display: none;
+  }
+  .icon_right {
+    display: none;
+  }
+  .products {
+    align-items: center;
+    padding-left: 0;
+  }
+  .icon_finish {
+    padding-bottom: 1em;
   }
 }

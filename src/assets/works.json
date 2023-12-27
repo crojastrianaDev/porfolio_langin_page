@@ -1,0 +1,79 @@
+[
+  {
+    "cod": "brand-1",
+    "url": "works/brand_identity/prod-1.png",
+    "titulo": "Globox",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-1",
+    "url": "works/brand_identity/prod-1.png",
+    "titulo": "Globox",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-2",
+    "url": "works/brand_identity/prod-2.png",
+    "titulo": "Cascos y lujos",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-3",
+    "url": "works/brand_identity/prod-3.png",
+    "titulo": "Buena papa Salchipaperia",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-4",
+    "url": "works/brand_identity/prod-4.png",
+    "titulo": "Caldi café",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-5",
+    "url": "works/brand_identity/prod-5.png",
+    "titulo": "Sould posse",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-6",
+    "url": "works/brand_identity/prod-6.png",
+    "titulo": "Wise childre",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-7",
+    "url": "works/brand_identity/prod-7.png",
+    "titulo": "Luxo kids",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-8",
+    "url": "works/brand_identity/prod-8.png",
+    "titulo": "Casita de dulce",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-9",
+    "url": "works/brand_identity/prod-9.png",
+    "titulo": "Las rellenas de marianita",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-10",
+    "url": "works/brand_identity/prod-10.png",
+    "titulo": "Ais Inmobiliaria",
+    "categoria": "1",
+    "link": ""
+  }
+]

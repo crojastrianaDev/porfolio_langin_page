@@ -11,17 +11,24 @@
   padding: 0;
 }
 .card-title,
-p,
 h5 {
   color: var(--Tono2, #fd6d0d);
   font-family: Outfit, sans-serif;
-  /*font-size: 3.125em;*/
+  font-size: 1.8em;
   font-style: normal;
   font-weight: 700;
-  /*line-height: 1em;*/
+  line-height: 1.5em;
   /*display: block;*/
 
   margin-bottom: 0;
+}
+p {
+  font-family: Outfit, sans-serif;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3em;
+  /*display: block;*/
 }
 .card-text {
   color: #848382;
@@ -32,13 +39,14 @@ h5 {
 }
 .card-title-container {
   padding: 0em;
-  margin-top: 6em;
+  margin-top: 9em;
   display: flex;
   width: 34.688em;
   height: 16.063em;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
+  margin-left: 2em;
   margin-bottom: 1em;
 }
 .card-text-container {
@@ -51,13 +59,20 @@ h5 {
   margin-top: 0em;
 }
 .layout {
-  margin-top: 6em;
-  width: 33.25em;
-  height: 18.75em;
+  margin-top: 1em;
+  margin-left: 3em;
+  width: 100%;
+  height: 31.875em;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.svg-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  height: 100%; /* Opcional: Ajusta la altura según sea necesario */
 }
 section {
   width: 100%;
@@ -111,15 +126,18 @@ h4 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 0.3em;
+  padding: 0.1em;
 }
 .text-layout {
   display: flex;
-  width: 1044px;
-  height: 43px;
+  width: 65.25em;
+  height: 2.688em;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
+}
+.salto {
+  margin-top: 0.5em;
 }
 .p-text {
   color: #848382;
@@ -127,12 +145,13 @@ h4 {
 
   /* Lla1 */
   font-family: Outfit, sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
   font-style: normal;
   font-weight: 400;
   line-height: 29px; /* 145% */
   padding: 0;
   margin: 0;
+  padding-right: 48px;
 }
 @media screen and (max-width: 812px) {
   .card {
@@ -142,6 +161,10 @@ h4 {
     flex-direction: column;
     align-items: center;
   }
+  .p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+  }
   .card-body {
     margin-top: 0;
     height: initial;
@@ -149,19 +172,19 @@ h4 {
     padding: 0 0 0 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .container-fluid {
     height: initial;
   }
   .layout {
-    margin-top: 0em;
+    margin-top: 4em;
     width: 100%;
     height: initial;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 0em;
   }
   .init {
     display: flex;
@@ -172,9 +195,11 @@ h4 {
   }
   .card-title-container {
     text-align: center;
+    margin-top: 0.5em;
+    margin-left: 0em;
   }
   .btn-responsive {
-    padding-left: 30px;
+    padding-left: 1.25em;
   }
   h4 {
     color: var(--Tono2, #fd6d0d);
@@ -206,12 +231,15 @@ h4 {
 
     /* Lla1 */
     font-family: Outfit, sans-serif;
-    font-size: 0.6em;
+    font-size: 0.8em;
     font-style: normal;
     font-weight: 400;
-    line-height: 29px; /* 145% */
+    line-height: 1.5em; /* 145% */
     padding: 0;
-    margin: 0;
+    margin: 0em 0em 0em 0em;
+  }
+  .salto {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 813px) and (max-width: 1000px) {

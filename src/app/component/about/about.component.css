@@ -16,7 +16,7 @@
 h5 {
   color: var(--Tono2, #fd6d0d);
   font-family: Outfit, sans-serif;
-  font-size: 1.65m;
+  font-size: 1.65em;
   font-style: normal;
   font-weight: 700;
   line-height: 1.5em; /* 133.333% */

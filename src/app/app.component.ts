@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'porfolio_langin_page';
+  title = 'Danna Dayanna Rojas Triana';
 }

@@ -17,14 +17,26 @@ export class WorksService {
     this.http.get('../../assets/works.json').subscribe((data: any) => {
       this.works = data;
     });
-    console.log(this.works);
+    this.works.forEach((element) => {
+      console.log(element);
+    });
+
     return this.works;
   }
-  private loadWithCategory(category: string) {
-    this.works.forEach((element) => {
+  loadWokrs() {
+    return this.works;
+  }
+  loadWithCategory(category: string): WorkInt[] {
+    this.filterWorks = [];
+
+    this.works.filter((element) => {
       if (element.categoria === category) {
+        console.log(element);
         this.filterWorks.push(element);
       }
     });
+
+    console.log(this.filterWorks);
+    return this.filterWorks;
   }
 }

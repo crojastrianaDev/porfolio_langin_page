@@ -14,14 +14,20 @@ import { OnInit } from '@angular/core';
 export class WorksComponent implements OnInit {
   works: WorkInt[] = [];
   loadWoks: WorkInt[] = [];
+  // init: boolean = true;
   constructor(public worksService: WorksService) {}
 
   ngOnInit(): void {
+    // if (this.init) {
     this.loadWoks = [];
-    this.loadWoks = this.worksService.loadWokrs();
+    this.worksService.loadWorksInit().subscribe((data: WorkInt[]) => {
+      this.loadWoks = data;
+    });
+    // }
   }
 
   public onClick(category: string) {
+    // this.init = false;
     console.log(category);
     this.loanFilterdWorks(category);
   }

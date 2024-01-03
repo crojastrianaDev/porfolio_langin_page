@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { WorkInt } from '../domain/worksInt';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
@@ -13,21 +14,25 @@ export class WorksService {
     this.loadWorks();
   }
 
-  private loadWorks(): WorkInt[] {
-    this.http.get('../../assets/works.json').subscribe((data: any) => {
-      this.works = data;
-    });
-    this.works.forEach((element) => {
-      console.log(element);
-    });
+  private loadWorks(): Observable<WorkInt[]> {
+    return this.http.get<WorkInt[]>('../../assets/works.json');
+    // this.http.get('../../assets/works.json').subscribe((data: any) => {
+    //   this.works = data;
+    // });
+    // this.works.forEach((element) => {
+    //   console.log(element);
+    // });
 
-    return this.works;
+    // return this.works;
   }
-  loadWokrs() {
-    return this.works;
+  loadWorksInit(): Observable<WorkInt[]> {
+    return this.loadWorks();
   }
   loadWithCategory(category: string): WorkInt[] {
     this.filterWorks = [];
+    this.loadWorksInit().subscribe((data: WorkInt[]) => {
+      this.works = data;
+    });
 
     this.works.filter((element) => {
       if (element.categoria === category) {

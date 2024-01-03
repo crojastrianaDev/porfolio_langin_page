@@ -68,5 +68,103 @@
     "titulo": "Ais Inmobiliaria",
     "categoria": "1",
     "link": ""
+  },
+  {
+    "cod": "social-1",
+    "url": "works/social_media/prod-11.png",
+    "titulo": "Contaduria",
+    "categoria": "2",
+    "link": ""
+  },
+  {
+    "cod": "social-2",
+    "url": "works/social_media/prod-12.png",
+    "titulo": "Salchipaperia",
+    "categoria": "2",
+    "link": ""
+  },
+  {
+    "cod": "social-3",
+    "url": "works/social_media/prod-13.png",
+    "titulo": "Utopía",
+    "categoria": "2",
+    "link": ""
+  },
+  {
+    "cod": "social-4",
+    "url": "works/social_media/prod-14.png",
+    "titulo": "Rellenas",
+    "categoria": "2",
+    "link": ""
+  },
+  {
+    "cod": "social-5",
+    "url": "works/social_media/prod-15.png",
+    "titulo": "Rotri reposteria",
+    "categoria": "2",
+    "link": ""
+  },
+  {
+    "cod": "social-6",
+    "url": "works/social_media/prod-16.png",
+    "titulo": "Rotri reposteria",
+    "categoria": "2",
+    "link": ""
+  },
+  {
+    "cod": "ui-1",
+    "url": "works/ux/prod-17.png",
+    "titulo": "El Mandao",
+    "categoria": "3",
+    "link": ""
+  },
+  {
+    "cod": "ui-2",
+    "url": "works/ux/prod-18.png",
+    "titulo": "El Mandao",
+    "categoria": "3",
+    "link": ""
+  },
+  {
+    "cod": "ui-3",
+    "url": "works/ux/prod-19.png",
+    "titulo": "Rotri resposteria",
+    "categoria": "3",
+    "link": ""
+  },
+  {
+    "cod": "ui-4",
+    "url": "works/ux/prod-20.png",
+    "titulo": "El Mandao",
+    "categoria": "3",
+    "link": ""
+  },
+  {
+    "cod": "other-1",
+    "url": "works/other/prod-21.png",
+    "titulo": "Invitation card",
+    "categoria": "4",
+    "link": ""
+  },
+  {
+    "cod": "other-2",
+    "url": "works/other/prod-22.png",
+    "titulo": "Invitation card",
+    "categoria": "4",
+    "link": ""
+  },
+  {
+    "cod": "other-3",
+    "url": "works/other/prod-23.png",
+    "titulo": "Invitation card",
+    "categoria": "4",
+    "link": ""
+  },
+  {
+    "cod": "other-4",
+    "url": "works/other/prod-24.png",
+    "titulo": "Invitation card",
+    "categoria": "4",
+    "link": ""
   }
 ]

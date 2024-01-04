@@ -37,7 +37,6 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-      angular_dist_build_folder: docs # The folder where your project is supposed to be after running ng build by the action.
 
   # Deployment job
   deploy:
@@ -50,3 +49,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          build_dir: docs

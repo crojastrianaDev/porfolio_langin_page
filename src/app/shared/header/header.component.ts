@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Output,
+  Renderer2,
+} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,8 +16,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class HeaderComponent {
   @Output() sectionClicked = new EventEmitter<string>();
 
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
+
   public onClick(sectionId: string) {
     this.sectionClicked.emit(sectionId);
+    const navbarCollapse =
+      this.el.nativeElement.querySelector('.navbar-collapse');
+    this.renderer.removeClass(navbarCollapse, 'show');
   }
   ToggleNavBar(): void {
     const element: HTMLElement = document.getElementsByClassName(

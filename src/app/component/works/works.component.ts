@@ -14,6 +14,7 @@ import { OnInit } from '@angular/core';
 export class WorksComponent implements OnInit {
   works: WorkInt[] = [];
   loadWoks: WorkInt[] = [];
+  maxItemsToShow = 2;
   // init: boolean = true;
   constructor(public worksService: WorksService) {}
 

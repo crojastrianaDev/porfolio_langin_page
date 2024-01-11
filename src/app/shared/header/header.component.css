@@ -39,6 +39,9 @@ a {
   line-height: normal;
   font-size: 1.688em;
 }
+.nav-link navItem {
+  cursor: pointer;
+}
 
 @media btnHome, only screen and (max-width: 767px) {
   .navbar-brand {

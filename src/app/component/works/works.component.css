@@ -4,6 +4,17 @@
   transform: rotate(-11.778deg);
   flex-shrink: 0;
 }
+.icon_end {
+  width: 99.098px;
+  height: 58.958px;
+  position: absolute;
+  flex-shrink: 0;
+  transform: rotate(-12.778deg);
+  bottom: 0;
+  right: 0;
+  margin: 125px; /* Ajusta esto según sea necesario para dar espacio al icono desde el borde */
+  display: none;
+}
 .nav-link {
   color: var(--Tono2, #fd6d0d);
   font-family: Outfit, sans-serif;
@@ -92,8 +103,19 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+  .navbar-container {
+    flex-direction: row; /* Establecer la dirección de flexión a horizontal */
+  }
+
   .nav {
-    display: none;
+    flex-direction: row; /* Si es necesario, ajusta la dirección de flexión del menú */
+  }
+  a {
+    margin-left: 1.5em;
+    cursor: pointer;
+  }
+  a:hover {
+    border-bottom: 1px solid #fd6d0d;
   }
   .icon_init {
     display: none;

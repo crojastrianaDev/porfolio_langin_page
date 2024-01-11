@@ -153,6 +153,9 @@ h4 {
   margin: 0;
   padding-right: 48px;
 }
+a:link {
+  text-decoration: none;
+}
 @media screen and (max-width: 812px) {
   .card {
     height: initial;

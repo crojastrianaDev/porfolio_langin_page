@@ -15,6 +15,9 @@
   margin: 125px; /* Ajusta esto según sea necesario para dar espacio al icono desde el borde */
   display: none;
 }
+.nav {
+  margin-top: 3.6em;
+}
 .nav-link {
   color: var(--Tono2, #fd6d0d);
   font-family: Outfit, sans-serif;

@@ -36,6 +36,7 @@ span {
 }
 .social {
   padding-right: 1.875em;
+  padding-top: 0.2em;
 }
 @media btnHome, only screen and (max-width: 767px) {
   img {

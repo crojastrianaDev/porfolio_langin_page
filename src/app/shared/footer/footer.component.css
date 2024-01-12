@@ -5,7 +5,7 @@
   flex-shrink: 0;
 }
 .margin {
-  margin-top: 5.5em;
+  margin-top: 5em;
   margin-bottom: 3em;
 }
 img {
@@ -36,6 +36,7 @@ span {
 }
 .social {
   padding-right: 1.875em;
+  padding-top: 0.2em;
 }
 @media btnHome, only screen and (max-width: 767px) {
   img {
@@ -65,5 +66,52 @@ span {
   .icon_two {
     margin-top: 0em;
     width: 40px;
+  }
+  .card {
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+  }
+  .card-body {
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  img {
+    width: 98%;
+  }
+  .margin {
+    margin-top: 1.5em;
+    margin-bottom: 0em;
+    padding: 0;
+  }
+  .text-end {
+    text-align: center;
+  }
+  .social {
+    justify-content: center;
+    text-align: center;
+    padding-right: 0;
+  }
+  span {
+    padding: 0;
+    font-size: xx-small;
+  }
+  .icon {
+    margin-top: 1em;
+    width: 40px;
+  }
+  .icon_two {
+    margin-top: 0em;
+    width: 40px;
+  }
+  .card {
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+  }
+  .card-body {
+    margin-bottom: 0em;
+    padding-bottom: 0em;
   }
 }

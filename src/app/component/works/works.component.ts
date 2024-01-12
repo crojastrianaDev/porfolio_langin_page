@@ -14,7 +14,7 @@ import { OnInit } from '@angular/core';
 export class WorksComponent implements OnInit {
   works: WorkInt[] = [];
   loadWoks: WorkInt[] = [];
-  maxItemsToShow = 2;
+  maxItemsToShow = 10;
   // init: boolean = true;
   constructor(public worksService: WorksService) {}
 
@@ -32,8 +32,19 @@ export class WorksComponent implements OnInit {
     console.log(category);
     this.loanFilterdWorks(category);
   }
-  loanFilterdWorks(category: string): WorkInt[] {
-    this.works = [];
-    return (this.works = this.worksService.loadWithCategory(category));
+  loanFilterdWorks(category: string): Promise<WorkInt[]> {
+    return new Promise<WorkInt[]>((resolve, reject) => {
+      try {
+        this.worksService.loadWorksInit().subscribe((data: WorkInt[]) => {
+          // Filtra los elementos que coinciden con la categoría
+          this.works = data.filter((element) => element.categoria === category);
+          console.log(this.works);
+          resolve(this.works); // Resuelve la promesa con los elementos filtrados
+        });
+      } catch (error) {
+        console.error('Error:', error);
+        reject(error); // Rechaza la promesa en caso de error
+      }
+    });
   }
 }

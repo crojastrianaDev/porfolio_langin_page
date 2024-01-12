@@ -44,6 +44,28 @@ span {
   h5 {
     color: var(--Tono2, #fd6d0d);
     font-family: Outfit, sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5em; /* 133.333% */
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  p {
+    color: #848382;
+    text-align: justify;
+    font-family: Outfit, sans-serif;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2em; /* 112% */
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h5 {
+    color: var(--Tono2, #fd6d0d);
+    font-family: Outfit, sans-serif;
     font-size: 1.9em;
     font-style: normal;
     font-weight: 700;
@@ -55,9 +77,19 @@ span {
     color: #848382;
     text-align: justify;
     font-family: Outfit, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-style: normal;
     font-weight: 400;
     line-height: 1.2em; /* 112% */
+  }
+}
+@media screen and (max-width: 812px) {
+  .card {
+    margin-bottom: 0em !important;
+    padding-bottom: 0em !important;
+  }
+  .card-body {
+    margin-bottom: 0em !important;
+    padding-bottom: 0em !important;
   }
 }

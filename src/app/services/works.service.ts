@@ -28,9 +28,9 @@ export class WorksService {
   loadWorksInit(): Observable<WorkInt[]> {
     return this.loadWorks();
   }
-  loadWithCategory(category: string): WorkInt[] {
+  async loadWithCategory(category: string): Promise<WorkInt[]> {
     this.filterWorks = [];
-    this.loadWorksInit().subscribe((data: WorkInt[]) => {
+    this.loadWorks().subscribe((data: WorkInt[]) => {
       this.works = data;
     });
 

@@ -85,10 +85,10 @@ h4 {
 
   /* Tit1 */
   font-family: Outfit, sans-serif;
-  font-size: 2.5em;
+  font-size: 2em;
   font-style: normal;
   font-weight: 700;
-  line-height: 64px; /* 128% */
+  line-height: 40px; /* 128% */
 }
 .init {
   display: flex;
@@ -130,11 +130,12 @@ h4 {
 }
 .text-layout {
   display: flex;
-  width: 65.25em;
-  height: 2.688em;
-  flex-direction: column;
+  padding: 0.1em 3.75em;
   justify-content: center;
-  flex-shrink: 0;
+  align-items: center;
+  align-content: center;
+  gap: 0.625;
+  flex-wrap: wrap;
 }
 .salto {
   margin-top: 0.5em;
@@ -145,13 +146,13 @@ h4 {
 
   /* Lla1 */
   font-family: Outfit, sans-serif;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-style: normal;
   font-weight: 400;
   line-height: 29px; /* 145% */
   padding: 0;
   margin: 0;
-  padding-right: 48px;
+  padding-right: 0px;
 }
 a:link {
   text-decoration: none;
@@ -194,12 +195,13 @@ a:link {
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    margin-top: 1em;
+    margin-top: 0em;
   }
   .card-title-container {
     text-align: center;
-    margin-top: 0.5em;
+    margin-top: 0em;
     margin-left: 0em;
+    margin-bottom: 0em;
   }
   .btn-responsive {
     padding-left: 1.25em;
@@ -209,7 +211,7 @@ a:link {
     text-align: center;
     /* Tit1 */
     font-family: Outfit, sans-serif;
-    font-size: 1.5em;
+    font-size: 0.8em;
     font-style: normal;
     font-weight: 700;
     line-height: 1.2em; /* 128% */
@@ -226,7 +228,7 @@ a:link {
     padding: 0.3em;
   }
   .btn-responsive {
-    padding-left: 4em;
+    padding-left: 1em;
   }
   .p-text {
     color: #848382;
@@ -234,7 +236,7 @@ a:link {
 
     /* Lla1 */
     font-family: Outfit, sans-serif;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5em; /* 145% */

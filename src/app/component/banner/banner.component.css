@@ -252,3 +252,28 @@ a:link {
     padding-left: 5em;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .layout {
+    margin-top: 4em;
+    margin-left: 3em;
+    width: 100%;
+    height: 25.875em;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-title-container {
+    padding: 0em;
+    margin-top: 8.5em;
+    display: flex;
+    width: 34.688em;
+    height: 16.063em;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: 2em;
+    margin-bottom: 1em;
+  }
+}

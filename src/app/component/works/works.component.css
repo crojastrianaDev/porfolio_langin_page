@@ -15,7 +15,7 @@
   margin: 125px; /* Ajusta esto según sea necesario para dar espacio al icono desde el borde */
   display: none;
 }
-.nav {
+/*.nav {
   margin-top: 3.6em;
 }
 .nav-link {
@@ -31,12 +31,12 @@
 .nav-container {
   position: sticky;
   top: 0;
-  height: 100vh; /* Ajusta según sea necesario */
-  width: 100%; /* O ajusta según sea necesario */
+  height: 100vh;
+  width: 100%; 
   overflow-y: auto;
-  background-color: #fff; /* Fondo de la barra de navegación */
+  background-color: #fff; 
   z-index: 1000;
-}
+}*/
 
 /*.navbar-container .flex-column {
   margin-top: 1em;
@@ -45,12 +45,6 @@
   z-index: 1; 
   overflow-x: hidden; 
 }*/
-a {
-  transition: background-color 0.5s;
-}
-a:hover {
-  border-bottom: 1px solid #fd6d0d;
-}
 .icon_finish {
   display: flex;
   align-items: center;
@@ -104,6 +98,41 @@ a:hover {
 .card {
   margin-bottom: 1em;
 }
+.mb-4 {
+  margin-bottom: 0em !important;
+}
+.navbar-container {
+  flex-direction: row; /* Establecer la dirección de flexión a horizontal */
+  margin-left: 5em;
+}
+
+.nav {
+  flex-direction: row; /* Si es necesario, ajusta la dirección de flexión del menú */
+  margin-top: 0.1em;
+}
+.nav-link {
+  color: var(--Tono2, #fd6d0d);
+  font-family: Outfit, sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 2.4em;
+}
+a {
+  cursor: pointer;
+}
+a:hover,
+a.active {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 3em;
+  border-color: #fd6d0d;
+  background: var(--Tono2, #fd6d0d);
+  color: #fef0d3;
+}
 
 @media screen and (max-width: 812px) {
   .mb-4 {
@@ -111,6 +140,7 @@ a:hover {
   }
   .navbar-container {
     flex-direction: row; /* Establecer la dirección de flexión a horizontal */
+    margin-left: 0em;
   }
 
   .nav {
@@ -124,15 +154,22 @@ a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    margin-right: 0em;
   }
   a {
-    margin-left: 1.5em;
     cursor: pointer;
   }
-  a:hover {
-    border-bottom: 1px solid #fd6d0d;
+  a:hover,
+  a:active {
+    margin: 0;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    border-radius: 3em;
+    border-color: #fd6d0d;
+    background: var(--Tono2, #fd6d0d);
+    color: #fef0d3;
   }
   .icon_init {
     display: none;

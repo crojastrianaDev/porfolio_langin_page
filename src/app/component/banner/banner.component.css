@@ -39,7 +39,7 @@ p {
 }
 .card-title-container {
   padding: 0em;
-  margin-top: 9em;
+  margin-top: 7em;
   display: flex;
   width: 34.688em;
   height: 16.063em;
@@ -62,7 +62,7 @@ p {
   margin-top: 1em;
   margin-left: 3em;
   width: 100%;
-  height: 31.875em;
+  height: 25.875em;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -104,7 +104,7 @@ h4 {
   flex-wrap: wrap;
 }
 .now {
-  border-radius: 0.8em;
+  border-radius: 3em;
   background: var(--Tono2, #fd6d0d);
   border-color: #fd6d0d;
 }
@@ -250,5 +250,30 @@ a:link {
 @media screen and (min-width: 813px) and (max-width: 1000px) {
   .btn-responsive {
     padding-left: 5em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .layout {
+    margin-top: 4em;
+    margin-left: 3em;
+    width: 100%;
+    height: 25.875em;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-title-container {
+    padding: 0em;
+    margin-top: 8.5em;
+    display: flex;
+    width: 34.688em;
+    height: 16.063em;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: 2em;
+    margin-bottom: 1em;
   }
 }

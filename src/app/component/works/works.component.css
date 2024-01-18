@@ -89,7 +89,7 @@
   flex-shrink: 0;
 }
 .products {
-  padding-left: 5em;
+  padding-left: 0em;
   padding-top: 0.625em;
 }
 .right {
@@ -103,7 +103,7 @@
 }
 .navbar-container {
   flex-direction: row; /* Establecer la dirección de flexión a horizontal */
-  margin-left: 5em;
+  margin-left: 0em;
 }
 
 .nav {

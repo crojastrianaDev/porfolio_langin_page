@@ -89,7 +89,7 @@
   flex-shrink: 0;
 }
 .products {
-  padding-left: 5em;
+  padding-left: 0em;
   padding-top: 0.625em;
 }
 .right {
@@ -103,7 +103,7 @@
 }
 .navbar-container {
   flex-direction: row; /* Establecer la dirección de flexión a horizontal */
-  margin-left: 5em;
+  margin-left: 0em;
 }
 
 .nav {
@@ -124,8 +124,16 @@
 a {
   cursor: pointer;
 }
-a:hover,
-a.active {
+a:hover {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 3em;
+  border-color: #fd6d0d;
+  background: var(--Tono2, #fd6d0d);
+  color: #fef0d3;
+}
+
+a.selected {
   padding-left: 0.5em;
   padding-right: 0.5em;
   border-radius: 3em;
@@ -161,8 +169,7 @@ a.active {
   a {
     cursor: pointer;
   }
-  a:hover,
-  a:active {
+  a:hover {
     margin: 0;
     padding-left: 0.4em;
     padding-right: 0.4em;
@@ -171,6 +178,15 @@ a.active {
     background: var(--Tono2, #fd6d0d);
     color: #fef0d3;
   }
+  a.selected {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 3em;
+    border-color: #fd6d0d;
+    background: var(--Tono2, #fd6d0d);
+    color: #fef0d3;
+  }
+
   .icon_init {
     display: none;
   }

@@ -19,4 +19,12 @@ export class FooterComponent {
   public onClick(sectionId: string) {
     this.sectionClicked.emit(sectionId);
   }
+  ToggleNavBar(): void {
+    const element: HTMLElement = document.getElementsByClassName(
+      'navbar-toggler'
+    )[0] as HTMLElement;
+    if (element.getAttribute('aria-expanded') === 'true') {
+      element.click();
+    }
+  }
 }

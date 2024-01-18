@@ -49,13 +49,26 @@
           <div class="navbar-nav ms-auto flex-column flex-md-row">
             <ul class="navbar-nav text-end ul">
               <li class="nav-item layout" routerLinkActive="active">
-                <a class="nav-link navItem" (click)="onClick('works')">Works</a>
+                <a
+                  class="nav-link navItem"
+                  [class.selected]="isButtonSelected1"
+                  (click)="onClick('works')"
+                  >Works</a
+                >
               </li>
               <li class="nav-item layout" routerLinkActive="active">
-                <a class="nav-link navItem" (click)="onClick('about')">About</a>
+                <a
+                  class="nav-link navItem"
+                  [class.selected]="isButtonSelected2"
+                  (click)="onClick('about')"
+                  >About</a
+                >
               </li>
               <li class="nav-item layout" routerLinkActive="active">
-                <a class="nav-link navItem" (click)="onClick('contact')"
+                <a
+                  class="nav-link navItem"
+                  [class.selected]="isButtonSelected3"
+                  (click)="onClick('contact')"
                   >Contact</a
                 >
               </li>

@@ -60,7 +60,7 @@ p {
 }
 .layout {
   margin-top: 1em;
-  margin-left: 3em;
+  margin-left: 1em;
   width: 100%;
   height: 25.875em;
   flex-shrink: 0;
@@ -89,6 +89,7 @@ h4 {
   font-style: normal;
   font-weight: 700;
   line-height: 40px; /* 128% */
+  margin-top: 1em;
 }
 .init {
   display: flex;
@@ -153,6 +154,7 @@ h4 {
   padding: 0;
   margin: 0;
   padding-right: 0px;
+  margin-bottom: 2em;
 }
 a:link {
   text-decoration: none;
@@ -256,7 +258,7 @@ a:link {
 @media screen and (min-width: 1920px) {
   .layout {
     margin-top: 4em;
-    margin-left: 3em;
+    margin-left: 1em;
     width: 100%;
     height: 25.875em;
     flex-shrink: 0;

@@ -15,6 +15,10 @@ export class WorksComponent implements OnInit {
   works: WorkInt[] = [];
   loadWoks: WorkInt[] = [];
   maxItemsToShow = 10;
+  isButtonSelected1 = false;
+  isButtonSelected2 = false;
+  isButtonSelected3 = false;
+  isButtonSelected4 = false;
   // init: boolean = true;
   constructor(public worksService: WorksService) {}
 
@@ -28,8 +32,29 @@ export class WorksComponent implements OnInit {
   }
 
   public onClick(category: string) {
-    // this.init = false;
-    console.log(category);
+    this.isButtonSelected1 = false;
+    this.isButtonSelected2 = false;
+    this.isButtonSelected3 = false;
+    this.isButtonSelected4 = false;
+    switch (category) {
+      case '1': {
+        this.isButtonSelected1 = !this.isButtonSelected1;
+        break;
+      }
+      case '2': {
+        this.isButtonSelected2 = !this.isButtonSelected2;
+        break;
+      }
+      case '3': {
+        this.isButtonSelected3 = !this.isButtonSelected3;
+        break;
+      }
+      case '4': {
+        this.isButtonSelected4 = !this.isButtonSelected4;
+        break;
+      }
+    }
+
     this.loanFilterdWorks(category);
   }
   loanFilterdWorks(category: string): Promise<WorkInt[]> {

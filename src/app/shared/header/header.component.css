@@ -54,6 +54,9 @@ li {
 li:hover {
   border-bottom: 1px solid #fd6d0d;
 }
+a.selected {
+  border-bottom: 1px solid #fd6d0d;
+}
 .layout {
   margin-right: 1em;
 }

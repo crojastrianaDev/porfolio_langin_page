@@ -56,25 +56,29 @@
       <div class="navbar-container">
         <nav class="nav">
           <a
-            class="nav-link text-md"
+            class="nav-link text-md selected"
+            [class.selected]="isButtonSelected1"
             routerLinkActive="active"
             (click)="onClick('1')"
             >Brand Identity</a
           >
           <a
-            class="nav-link text-md"
+            class="nav-link text-md selected"
+            [class.selected]="isButtonSelected2"
             routerLinkActive="active"
             (click)="onClick('2')"
             >Social Media</a
           >
           <a
-            class="nav-link text-md"
+            class="nav-link text-md selected"
+            [class.selected]="isButtonSelected3"
             routerLinkActive="active"
             (click)="onClick('3')"
             >UI Design</a
           >
           <a
-            class="nav-link text-md"
+            class="nav-link text-md selected"
+            [class.selected]="isButtonSelected4"
             routerLinkActive="active"
             (click)="onClick('4')"
             >Other</a

@@ -100,7 +100,7 @@
               alt="{{ work.titulo }}"
               title="{{ work.titulo }}"
             />
-            <div class="middle">
+            <div *ngIf="work.link" class="middle">
               <a
                 href="{{ work.link }}"
                 class="text"

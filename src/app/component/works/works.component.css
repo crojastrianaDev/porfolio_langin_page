@@ -170,7 +170,7 @@ a.selected {
   color: #fff;
   text-align: center;
   /* Boton1 */
-  font-family: Outfit sans-serif;
+  font-family: Outfit, sans-serif;
   font-size: 27px;
   font-style: normal;
   font-weight: 700;
@@ -180,10 +180,10 @@ a.selected {
 .text:hover {
   color: #fff;
   text-align: center;
-  font-family: Outfit sans-serif;
+  font-family: Outfit, sans-serif;
   font-size: 27px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   line-height: normal;
   background: none;
 }

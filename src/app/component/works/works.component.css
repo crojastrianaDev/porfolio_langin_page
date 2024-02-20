@@ -187,6 +187,20 @@ a.selected {
   line-height: normal;
   background: none;
 }
+.content {
+  display: flex;
+  justify-content: center;
+}
+.child {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+h4 {
+  font-family: Outfit, sans-serif;
+  color: var(--Tono2, #fd6d0d);
+  font-weight: 750;
+  text-shadow: grey 0 1px;
+}
 
 @media screen and (max-width: 812px) {
   .mb-4 {

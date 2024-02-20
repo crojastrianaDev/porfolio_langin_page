@@ -40,6 +40,20 @@ span {
   font-weight: 400;
   line-height: 1.2em;
 }
+.content {
+  display: flex;
+  justify-content: center;
+}
+.child {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+h4 {
+  font-family: Outfit, sans-serif;
+  color: var(--Tono2, #fd6d0d);
+  font-weight: 750;
+  text-shadow: grey 0 1px;
+}
 @media screen and (min-width: 1000px) {
   h5 {
     color: var(--Tono2, #fd6d0d);

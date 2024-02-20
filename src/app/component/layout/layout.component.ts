@@ -4,6 +4,7 @@ import { FooterComponent } from '../../shared/footer/footer.component';
 import { BannerComponent } from '../banner/banner.component';
 import { AboutComponent } from '../about/about.component';
 import { WorksComponent } from '../works/works.component';
+import { ServicesComponent } from '../services/services.component';
 
 @Component({
   selector: 'app-layout',
@@ -14,6 +15,7 @@ import { WorksComponent } from '../works/works.component';
     BannerComponent,
     AboutComponent,
     WorksComponent,
+    ServicesComponent,
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css',

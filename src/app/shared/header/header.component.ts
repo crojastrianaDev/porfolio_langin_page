@@ -18,6 +18,7 @@ export class HeaderComponent {
   isButtonSelected1 = false;
   isButtonSelected2 = false;
   isButtonSelected3 = false;
+  isButtonSelected4 = false;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
@@ -25,6 +26,7 @@ export class HeaderComponent {
     this.isButtonSelected1 = false;
     this.isButtonSelected2 = false;
     this.isButtonSelected3 = false;
+    this.isButtonSelected4 = false;
 
     switch (sectionId) {
       case 'works': {
@@ -39,10 +41,16 @@ export class HeaderComponent {
         this.isButtonSelected3 = !this.isButtonSelected3;
         break;
       }
+      case 'services': {
+        this.isButtonSelected4 = !this.isButtonSelected4;
+        break;
+      }
+
       default: {
         this.isButtonSelected1 = false;
         this.isButtonSelected2 = false;
         this.isButtonSelected3 = false;
+        this.isButtonSelected4 = false;
       }
     }
     this.sectionClicked.emit(sectionId);

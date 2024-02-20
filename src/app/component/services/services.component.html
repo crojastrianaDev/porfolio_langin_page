@@ -1,0 +1,81 @@
+<div class="container-fluid">
+  <div class="content">
+    <div class="child">
+      <img src="../../../assets/v2/services.webp" alt="Services" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <div class="navbar-container">
+        <nav class="nav">
+          <a
+            class="nav-link text-md selected"
+            [class.selected]="isButtonSelected1"
+            routerLinkActive="active"
+            (click)="onClick('lDS')"
+            >Logo Design</a
+          >
+          <a
+            class="nav-link text-md selected"
+            [class.selected]="isButtonSelected2"
+            routerLinkActive="active"
+            (click)="onClick('SM')"
+            >Social Media</a
+          >
+          <a
+            class="nav-link text-md selected"
+            [class.selected]="isButtonSelected3"
+            routerLinkActive="active"
+            (click)="onClick('oTDs')"
+            >Other Design</a
+          >
+        </nav>
+      </div>
+      <div
+        class="row services"
+        *ngIf="services.length == 0 && loanServices.length > 0"
+      >
+        <div
+          class="col-sm-6 mb-4 mb-sm-0"
+          *ngFor="let item of loanServices.slice(0, maxItemsToShow)"
+        >
+          <div class="card">
+            <img
+              src="assets/{{ item.url }}"
+              alt="{{ item.title }}"
+              class="card-img-top"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row services" *ngIf="services.length > 0">
+        <div class="col-sm-6 mb-4 mb-sm-0" *ngFor="let item of services">
+          <div class="card">
+            <img
+              src="assets/{{ item.url }}"
+              alt="{{ item.title }}"
+              class="card-img-top"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="icon_finish">
+        <svg
+          width="477"
+          height="50"
+          viewBox="0 0 477 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.98983 49.4299C6.07709 49.4269 4.22877 48.7386 2.77987 47.4899C1.17162 46.1066 0.178768 44.1412 0.0193697 42.0259C-0.140029 39.9106 0.547221 37.8186 1.93001 36.2099C20.64 14.4799 40.8499 2.67992 62.0199 1.13992C80.6299 -0.210077 93.1899 6.77992 105.34 13.5399C116.67 19.8499 127.34 25.8199 143.85 25.6299C158.26 25.4699 165.58 20.7599 174.05 15.2999C183.28 9.29993 193.75 2.58992 212.87 2.22992C234.5 1.81992 247.87 9.79992 259.72 16.8299C270.94 23.4999 279.8 28.7599 294.42 26.8299C306.42 25.2199 312.6 20.1299 319.73 14.2299C327.73 7.61992 336.73 0.129918 353.36 0.00991821C369.99 -0.110082 380.81 7.12992 390.46 13.5099C399.22 19.2999 406.78 24.2899 418.21 24.5099C432.54 24.8099 447.49 17.3399 462.53 2.32993C463.273 1.58611 464.155 0.996039 465.126 0.593445C466.098 0.19085 467.139 -0.0163574 468.19 -0.0163574C469.241 -0.0163574 470.282 0.19085 471.254 0.593445C472.225 0.996039 473.107 1.58611 473.85 2.32993C474.594 3.07291 475.184 3.95521 475.587 4.92639C475.989 5.89758 476.196 6.93861 476.196 7.98993C476.196 9.04125 475.989 10.0823 475.587 11.0534C475.184 12.0246 474.594 12.9069 473.85 13.6499C455.61 31.8499 436.74 40.8699 417.85 40.4999C401.79 40.1599 391.07 33.0799 381.61 26.8299C372.74 20.9699 365.11 15.8999 353.44 15.9799C342.54 16.0599 337.24 20.4499 329.9 26.5199C322.41 32.7299 313.08 40.4499 296.5 42.6599C276.38 45.3399 263.73 37.8299 251.5 30.5699C240.5 24.0499 230.21 17.8699 213.13 18.2099C198.56 18.4899 191.2 23.2099 182.68 28.7199C173.46 34.6699 163.01 41.3999 143.98 41.6099H143.08C122.87 41.6099 109.41 34.1099 97.5098 27.4899C86.5098 21.3599 76.99 16.0599 63.14 17.0699C46.37 18.2899 29.8499 28.2299 14.0199 46.6199C13.2752 47.4935 12.3513 48.1966 11.3109 48.6814C10.2704 49.1663 9.13769 49.4216 7.98983 49.4299Z"
+            fill="#FD6D0D"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="col-sm-2"></div>
+  </div>
+</div>

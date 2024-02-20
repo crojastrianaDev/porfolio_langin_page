@@ -41,7 +41,6 @@ export class WorksService {
       }
     });
 
-    console.log(this.filterWorks);
     return this.filterWorks;
   }
 }

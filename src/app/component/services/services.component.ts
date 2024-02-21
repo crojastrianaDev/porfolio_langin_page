@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Services } from '../../domain/services';
 import { ServiceService } from '../../services/service.service';
 
@@ -17,7 +17,26 @@ export class ServicesComponent {
   isButtonSelected1 = true;
   isButtonSelected2 = false;
   isButtonSelected3 = false;
+
+  @ViewChild('cardContainer') cardContainer: ElementRef | undefined;
+
   constructor(public servicesService: ServiceService) {}
+
+  ngAfterViewInit(): void {
+    this.adjustButtonPosition();
+  }
+  adjustButtonPosition(): void {
+    const cardContainerHeight = this.cardContainer!.nativeElement.offsetHeight;
+    console.log(cardContainerHeight);
+    const buttons = document.querySelectorAll('.now');
+
+    buttons.forEach((button: Element) => {
+      const buttonElement = button as HTMLElement;
+      const buttonHeight = buttonElement.offsetHeight; // Obtener la altura del botón
+
+      buttonElement.style.top = `calc(${cardContainerHeight}px - ${buttonHeight}px)`; //calc(61.25em / 2 - 0.625em);
+    });
+  }
   ngOnInit(): void {
     this.loanServices = [];
     this.servicesService.loandServicesInit().subscribe((data: Services[]) => {

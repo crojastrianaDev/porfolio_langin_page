@@ -45,8 +45,8 @@ span {
   justify-content: center;
 }
 .child {
-  margin-top: 1em;
-  margin-bottom: 3em;
+  margin-top: 1.5em;
+  margin-bottom: 4em;
 }
 h4 {
   font-family: Outfit, sans-serif;
@@ -74,6 +74,10 @@ h4 {
     font-weight: 400;
     line-height: 1.2em; /* 112% */
   }
+  .child {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -96,6 +100,10 @@ h4 {
     font-weight: 400;
     line-height: 1.2em; /* 112% */
   }
+  .child {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+  }
 }
 @media screen and (max-width: 812px) {
   .card {
@@ -105,5 +113,9 @@ h4 {
   .card-body {
     margin-bottom: 0em !important;
     padding-bottom: 0em !important;
+  }
+  .child {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
   }
 }

@@ -34,7 +34,7 @@ export class ServicesComponent {
       const buttonElement = button as HTMLElement;
       const buttonHeight = buttonElement.offsetHeight; // Obtener la altura del botón
 
-      buttonElement.style.top = `calc(${cardContainerHeight}px - ${buttonHeight}px)`; //calc(61.25em / 2 - 0.625em);
+      buttonElement.style.top = 'calc(cardContainerHeight / 2 - buttonHeight)';
     });
   }
   ngOnInit(): void {

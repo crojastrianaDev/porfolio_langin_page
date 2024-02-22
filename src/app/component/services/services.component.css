@@ -86,6 +86,8 @@ p {
   border-color: #fd6d0d;
   position: absolute;
   left: calc(44.275em / 2 - 2.5em);
+  height: auto;
+  width: 10em;
   /*op: calc(61.25em / 2 - 0.625em);*/
 }
 .btn-layout {
@@ -113,6 +115,12 @@ a:link {
 }
 .card-container {
   position: relative;
+}
+.button-container {
+  position: absolute;
+  bottom: 1.3em; /* Alinea el contenedor del botón en la mitad vertical */
+  left: -8%;
+  margin-left: 1em;
 }
 @media screen and (max-width: 812px) {
   .mb-4 {
@@ -163,7 +171,7 @@ a:link {
     margin-bottom: 2em;
   }
   .card {
-    margin-top: 0.5em;
+    margin-top: 1.2em;
   }
   .now {
     border-radius: 4em;
@@ -183,6 +191,26 @@ a:link {
     font-weight: 700;
     line-height: normal;
     padding: 0.5em;
+  }
+  .now {
+    border-radius: 4em;
+    background: var(--Tono2, #fd6d0d);
+    border-color: #fd6d0d;
+    position: absolute;
+    left: calc(44.275em / 2 - 2.5em);
+    height: auto;
+    width: 10em;
+    /*op: calc(61.25em / 2 - 0.625em);*/
+  }
+  .button-container {
+    position: absolute;
+    bottom: 0.5em; /* Alinea el contenedor del botón en la mitad vertical */
+    left: -7em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+  .icon_finish {
+    margin-top: 1.5em;
   }
 }
 
@@ -204,14 +232,6 @@ a:link {
   .card {
     margin-top: 0.5em;
   }
-  .now {
-    border-radius: 4em;
-    background: var(--Tono2, #fd6d0d);
-    border-color: #fd6d0d;
-    position: absolute;
-    left: calc(56.25em / 2 - 2.5em);
-    /*op: calc(77.5em / 2 - 0.625em);*/
-  }
   .p-btn {
     color: var(--Tono1, #fef0d3);
     text-align: center;
@@ -222,5 +242,21 @@ a:link {
     font-weight: 700;
     line-height: normal;
     padding: 0.5em;
+  }
+  .now {
+    border-radius: 4em;
+    background: var(--Tono2, #fd6d0d);
+    border-color: #fd6d0d;
+    position: absolute;
+    left: calc(44.275em / 2 - 2.5em);
+    height: auto;
+    width: 13em;
+    /*op: calc(61.25em / 2 - 0.625em);*/
+  }
+  .button-container {
+    position: absolute;
+    bottom: 1.3em; /* Alinea el contenedor del botón en la mitad vertical */
+    left: 2em;
+    margin-left: 1em;
   }
 }

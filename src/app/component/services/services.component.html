@@ -46,17 +46,19 @@
               alt="{{ item.title }}"
               class="card-img-top"
             />
-            <button type="button" class="btn btn-primary now">
-              <a
-                href="mailto:dannarojasgd@gmail.com?subject=Price&body=Hello, I hope you are well
-              I would like to make a quote"
-                target="_blank"
-                rel="noreferrer"
-                class="p-btn p"
-              >
-                Get started
-              </a>
-            </button>
+            <div class="button-container">
+              <button type="button" class="btn btn-primary now">
+                <a
+                  href="mailto:dannarojasgd@gmail.com?subject=Price&body=Hello, I hope you are well I would like to make a quote"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="p-btn p"
+                  [id]="'button_' + item.cod"
+                >
+                  Get started
+                </a>
+              </button>
+            </div>
           </div>
         </div>
         <div class="icon_finish">
@@ -82,18 +84,19 @@
               alt="{{ item.title }}"
               class="card-img-top"
             />
-            <button type="button" class="btn btn-primary now">
-              <a
-                href="mailto:dannarojasgd@gmail.com?subject=Price&body=Hello, I hope you are well
-              I would like to make a quote"
-                target="_blank"
-                rel="noreferrer"
-                class="p-btn p"
-                [id]="'button_' + item.cod"
-              >
-                Get started
-              </a>
-            </button>
+            <div class="button-container">
+              <button type="button" class="btn btn-primary now">
+                <a
+                  href="mailto:dannarojasgd@gmail.com?subject=Price&body=Hello, I hope you are well I would like to make a quote"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="p-btn p"
+                  [id]="'button_' + item.cod"
+                >
+                  Get started
+                </a>
+              </button>
+            </div>
           </div>
         </div>
         <div class="icon_finish">

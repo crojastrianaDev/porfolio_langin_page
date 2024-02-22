@@ -24,6 +24,7 @@ export class WorksComponent implements OnInit {
 
   ngOnInit(): void {
     // if (this.init) {
+    this.isButtonSelected1 = true;
     this.loadWoks = [];
     this.worksService.loadWorksInit().subscribe((data: WorkInt[]) => {
       this.loadWoks = data;
@@ -63,7 +64,7 @@ export class WorksComponent implements OnInit {
         this.worksService.loadWorksInit().subscribe((data: WorkInt[]) => {
           // Filtra los elementos que coinciden con la categoría
           this.works = data.filter((element) => element.categoria === category);
-          console.log(this.works);
+
           resolve(this.works); // Resuelve la promesa con los elementos filtrados
         });
       } catch (error) {

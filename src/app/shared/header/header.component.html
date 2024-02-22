@@ -43,8 +43,8 @@
           </span>
         </a>
       </div>
-      <div class="col-sm-3"></div>
-      <div class="col-sm-1">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2">
         <div class="collapse navbar-collapse" id="navbarFixed">
           <div class="navbar-nav ms-auto flex-column flex-md-row">
             <ul class="navbar-nav text-end ul">
@@ -54,6 +54,14 @@
                   [class.selected]="isButtonSelected1"
                   (click)="onClick('works')"
                   >Works</a
+                >
+              </li>
+              <li class="nav-item layout" routerLinkActive="active">
+                <a
+                  class="nav-link navItem"
+                  [class.selected]="isButtonSelected4"
+                  (click)="onClick('services')"
+                  >Services</a
                 >
               </li>
               <li class="nav-item layout" routerLinkActive="active">

@@ -1,0 +1,38 @@
+[
+  {
+    "category": "lDS",
+    "cod": "1",
+    "url": "v2/logo-1.webp",
+    "title": "logo"
+  },
+  {
+    "category": "lDS",
+    "cod": "2",
+    "url": "v2/logo-2.webp",
+    "title": "logo"
+  },
+  {
+    "category": "SM",
+    "cod": "3",
+    "url": "v2/social-1.webp",
+    "title": "social media"
+  },
+  {
+    "category": "SM",
+    "cod": "4",
+    "url": "v2/social-2.webp",
+    "title": "social media"
+  },
+  {
+    "category": "oTDs",
+    "cod": "5",
+    "url": "v2/cards.webp",
+    "title": "Cards"
+  },
+  {
+    "category": "oTDs",
+    "cod": "6",
+    "url": "v2/poster.webp",
+    "title": "Poster"
+  }
+]

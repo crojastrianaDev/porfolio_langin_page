@@ -40,6 +40,20 @@ span {
   font-weight: 400;
   line-height: 1.2em;
 }
+.content {
+  display: flex;
+  justify-content: center;
+}
+.child {
+  margin-top: 1.5em;
+  margin-bottom: 4em;
+}
+h4 {
+  font-family: Outfit, sans-serif;
+  color: var(--Tono2, #fd6d0d);
+  font-weight: 750;
+  text-shadow: grey 0 1px;
+}
 @media screen and (min-width: 1000px) {
   h5 {
     color: var(--Tono2, #fd6d0d);
@@ -59,6 +73,10 @@ span {
     font-style: normal;
     font-weight: 400;
     line-height: 1.2em; /* 112% */
+  }
+  .child {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
   }
 }
 
@@ -82,6 +100,10 @@ span {
     font-weight: 400;
     line-height: 1.2em; /* 112% */
   }
+  .child {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+  }
 }
 @media screen and (max-width: 812px) {
   .card {
@@ -91,5 +113,9 @@ span {
   .card-body {
     margin-bottom: 0em !important;
     padding-bottom: 0em !important;
+  }
+  .child {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
   }
 }

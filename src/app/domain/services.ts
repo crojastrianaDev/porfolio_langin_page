@@ -3,4 +3,5 @@ export interface Services {
   cod: String;
   url: String;
   title: String;
+  link: String;
 }

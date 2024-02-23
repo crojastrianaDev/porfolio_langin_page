@@ -139,6 +139,15 @@
               class="card-img-top"
               alt="{{ work.titulo }}"
             />
+            <div *ngIf="work.link" class="middle">
+              <a
+                href="{{ work.link }}"
+                class="text"
+                target="_blank"
+                rel="noreferrer"
+                >View project</a
+              >
+            </div>
           </div>
         </div>
         <div class="icon_finish">

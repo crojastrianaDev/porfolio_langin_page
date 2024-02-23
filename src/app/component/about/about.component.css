@@ -101,8 +101,8 @@ h4 {
     line-height: 1.2em; /* 112% */
   }
   .child {
-    margin-top: 0.5em;
-    margin-bottom: 2em;
+    margin-top: 4.5em;
+    margin-bottom: 4em;
   }
 }
 @media screen and (max-width: 812px) {
@@ -115,7 +115,7 @@ h4 {
     padding-bottom: 0em !important;
   }
   .child {
-    margin-top: 0.5em;
+    margin-top: 4.5em;
     margin-bottom: 2em;
   }
 }

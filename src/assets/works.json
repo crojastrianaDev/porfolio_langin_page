@@ -111,6 +111,22 @@
     "categoria": "2",
     "link": ""
   },
+
+  {
+    "cod": "ui-3",
+    "url": "works/ux/prod-19.webp",
+    "titulo": "Rotri resposteria",
+    "categoria": "3",
+    "link": "https://www.figma.com/proto/OhsUIx0OGl521RmjTIMB8M/EstilosTG?node-id=365-13282&scaling=scale-down&page-id=17%3A2775&starting-point-node-id=33%3A2992"
+  },
+
+  {
+    "cod": "ui-4",
+    "url": "works/ux/prod-20.webp",
+    "titulo": "Rotri resposteria",
+    "categoria": "3",
+    "link": "https://www.figma.com/proto/OhsUIx0OGl521RmjTIMB8M/EstilosTG?node-id=365-13282&scaling=scale-down&page-id=17%3A2775&starting-point-node-id=33%3A2992"
+  },
   {
     "cod": "ui-1",
     "url": "works/ux/prod-17.webp",
@@ -118,6 +134,7 @@
     "categoria": "3",
     "link": ""
   },
+
   {
     "cod": "ui-2",
     "url": "works/ux/prod-18.webp",
@@ -125,20 +142,7 @@
     "categoria": "3",
     "link": ""
   },
-  {
-    "cod": "ui-3",
-    "url": "works/ux/prod-19.webp",
-    "titulo": "Rotri resposteria",
-    "categoria": "3",
-    "link": ""
-  },
-  {
-    "cod": "ui-4",
-    "url": "works/ux/prod-20.webp",
-    "titulo": "El Mandao",
-    "categoria": "3",
-    "link": ""
-  },
+
   {
     "cod": "other-1",
     "url": "works/other/prod-21.webp",

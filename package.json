@@ -1,6 +1,6 @@
 {
   "name": "porfolio-langin-page",
-  "version": "2.0.0",
+  "version": "2.0.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

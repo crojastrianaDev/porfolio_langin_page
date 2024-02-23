@@ -3,36 +3,42 @@
     "category": "lDS",
     "cod": "1",
     "url": "v2/logo-1.webp",
-    "title": "logo"
+    "title": "logo",
+    "link": "https://forms.gle/iAFGzu2Gfkcr5zgh9"
   },
   {
     "category": "lDS",
     "cod": "2",
     "url": "v2/logo-2.webp",
-    "title": "logo"
+    "title": "logo",
+    "link": "https://forms.gle/yVhctgn5Skxmu65n9"
   },
   {
     "category": "SM",
     "cod": "3",
     "url": "v2/social-1.webp",
-    "title": "social media"
+    "title": "social media",
+    "link": "https://forms.gle/6ypxDpquYDALWZhg9"
   },
   {
     "category": "SM",
     "cod": "4",
     "url": "v2/social-2.webp",
-    "title": "social media"
+    "title": "social media",
+    "link": "https://forms.gle/iPNdTa7jR51tkerY9"
   },
   {
     "category": "oTDs",
     "cod": "5",
     "url": "v2/cards.webp",
-    "title": "Cards"
+    "title": "Cards",
+    "link": ""
   },
   {
     "category": "oTDs",
     "cod": "6",
     "url": "v2/poster.webp",
-    "title": "Poster"
+    "title": "Poster",
+    "link": ""
   }
 ]

@@ -110,6 +110,10 @@ h4 {
   background: var(--Tono2, #fd6d0d);
   border-color: #fd6d0d;
 }
+.now:hover {
+  border-color: #934f4c;
+  background-color: #934f4c;
+}
 .btn-layout {
   display: flex;
   padding: 0.1em 3.75em;

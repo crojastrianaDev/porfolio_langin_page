@@ -36,7 +36,7 @@ h4 {
 a {
   cursor: pointer;
 }
-.selected:hover {
+a.selected:hover {
   padding-left: 0.5em;
   padding-right: 0.5em;
   border-radius: 3em;
@@ -165,16 +165,7 @@ a:link {
   a {
     cursor: pointer;
   }
-  a:hover {
-    margin: 0;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
-    border-radius: 3em;
-    border-color: #fd6d0d;
-    background: var(--Tono2, #fd6d0d);
-    color: #fef0d3;
-  }
-  a.selected {
+  a.selected:hover a.selected {
     padding-left: 0.5em;
     padding-right: 0.5em;
     border-radius: 3em;

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-CA" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="7142846775096359217" datatype="html">
+        <source> My passion is creating brands and developing unique visual identities that highlight the essence of each project </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/about/about.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4363072029460089694" datatype="html">
+        <source> With over 4 years of experience in graphic design, I&apos;ve had the privilege of collaborating with various small businesses in Colombia, crafting memorable logos, social media images, and other visual elements that have contributed to their success. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/about/about.component.html</context>
+          <context context-type="linenumber">25,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6540470253357600474" datatype="html">
+        <source> Currently, I am enjoying life in Metro Vancouver, where I continue to dedicate my creativity and skills to deliver impactful visual solutions. I am always open to new opportunities and excited about the challenges that the world of design may present. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/about/about.component.html</context>
+          <context context-type="linenumber">31,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3049663349517308230" datatype="html">
+        <source> If you are looking for a fresh, creative, and professional approach for your project, <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> I would be delighted to bring my experience and passion to your vision. <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/about/about.component.html</context>
+          <context context-type="linenumber">37,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5685651401744738230" datatype="html">
+        <source>Hello,</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/banner/banner.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6405661026824829832" datatype="html">
+        <source>I&apos;m Danna</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/banner/banner.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="496427201902214818" datatype="html">
+        <source> A designer who is passionate <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> and motivated by the creative world. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/banner/banner.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8740455980861567862" datatype="html">
+        <source> I lead multiple printing and digital design projects,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> brand identity, company rebranding, branding,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> UI design and high-fidelity prototypes. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/banner/banner.component.html</context>
+          <context context-type="linenumber">41,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5141497060114292078" datatype="html">
+        <source> Unique designs, lasting impact.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Let&apos;s make it memorable! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/banner/banner.component.html</context>
+          <context context-type="linenumber">58,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1752396967771808140" datatype="html">
+        <source> Services </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/banner/banner.component.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3923966534519357862" datatype="html">
+        <source>Please scroll down</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/banner/banner.component.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="435799081416714797" datatype="html">
+        <source>Logo Design</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/services/services.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1123921182481387584" datatype="html">
+        <source>Social Media</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/services/services.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/works/works.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="904982839283945919" datatype="html">
+        <source>Other Design</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/services/services.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1014900852249024343" datatype="html">
+        <source> Get started </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/services/services.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/services/services.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5778327058754480079" datatype="html">
+        <source>Brand Identity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/works/works.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3386607416229106187" datatype="html">
+        <source>UI Design</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/works/works.component.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8693603235657020323" datatype="html">
+        <source>Other</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/works/works.component.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6103915271480853773" datatype="html">
+        <source>View project</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/works/works.component.html</context>
+          <context context-type="linenumber">119,120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/works/works.component.html</context>
+          <context context-type="linenumber">154,155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8643314093581834360" datatype="html">
+        <source>© All Rights Reserved <x id="INTERPOLATION" equiv-text="{{ year }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="287700089426550905" datatype="html">
+        <source>Works</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7143579180750436311" datatype="html">
+        <source>Services</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1726363342938046830" datatype="html">
+        <source>About</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7922989125096435449" datatype="html">
+        <source>Contact</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/header/header.component.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

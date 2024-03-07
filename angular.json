@@ -9,10 +9,29 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-CA",
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.en.xlf",
+            "baseHref": ""
+          },
+          "es": {
+            "translation": "src/locale/messages.es.xlf",
+            "baseHref": ""
+          },
+          "fr-CA": {
+            "translation": "src/locale/messages.fr.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": true,
+            "aot": true,
             "outputPath": "dist/porfolio_langin_page",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -31,6 +50,21 @@
             ]
           },
           "configurations": {
+            "en": {
+              "localize": ["en"],
+              "outputPath": "dist/porfolio_langin_page-en/",
+              "i18nMissingTranslation": "error"
+            },
+            "es": {
+              "localize": ["es"],
+              "outputPath": "dist/porfolio_langin_page-es/",
+              "i18nMissingTranslation": "error"
+            },
+            "fr-CA": {
+              "localize": ["fr-CA"],
+              "outputPath": "dist/porfolio_langin_page-fr-CA/",
+              "i18nMissingTranslation": "error"
+            },
             "production": {
               "budgets": [
                 {
@@ -62,6 +96,15 @@
             },
             "development": {
               "buildTarget": "porfolio_langin_page:build:development"
+            },
+            "es": {
+              "buildTarget": "porfolio_langin_page:build:es"
+            },
+            "en": {
+              "buildTarget": "porfolio_langin_page:build:en"
+            },
+            "fr-CA": {
+              "buildTarget": "porfolio_langin_page:build:fr-CA"
             }
           },
           "defaultConfiguration": "development"

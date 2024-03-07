@@ -14,6 +14,7 @@
             [class.selected]="isButtonSelected1"
             routerLinkActive="active"
             (click)="onClick('lDS')"
+            i18n
             >Logo Design</a
           >
           <a
@@ -21,6 +22,7 @@
             [class.selected]="isButtonSelected2"
             routerLinkActive="active"
             (click)="onClick('SM')"
+            i18n
             >Social Media</a
           >
           <a
@@ -28,6 +30,7 @@
             [class.selected]="isButtonSelected3"
             routerLinkActive="active"
             (click)="onClick('oTDs')"
+            i18n
             >Other Design</a
           >
         </nav>
@@ -54,6 +57,7 @@
                   rel="noreferrer"
                   class="p-btn p"
                   [id]="'button_' + item.cod"
+                  i18n
                 >
                   Get started
                 </a>
@@ -92,6 +96,7 @@
                   rel="noreferrer"
                   class="p-btn p"
                   [id]="'button_' + item.cod"
+                  i18n
                 >
                   Get started
                 </a>

@@ -7,11 +7,11 @@
     "link": "https://www.behance.net/gallery/189417039/Globox-sas"
   },
   {
-    "cod": "brand-2",
-    "url": "works/brand_identity/prod-2.webp",
-    "titulo": "Cascos y lujos",
+    "cod": "brand-9",
+    "url": "works/brand_identity/prod-9.webp",
+    "titulo": "Las rellenas de marianita",
     "categoria": "1",
-    "link": "https://www.behance.net/gallery/190160209/Brand-Cascos-y-lujos-la-cuarta"
+    "link": ""
   },
   {
     "cod": "brand-3",
@@ -20,6 +20,36 @@
     "categoria": "1",
     "link": "https://www.behance.net/gallery/193499601/Brandboard-Buena-Papa-Salchipaperia"
   },
+  {
+    "cod": "brand-13",
+    "url": "works/brand_identity/prod-13.webp",
+    "titulo": "Industry X",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-12",
+    "url": "works/brand_identity/prod-12.webp",
+    "titulo": "La planta - Cafe",
+    "categoria": "1",
+    "link": ""
+  },
+  {
+    "cod": "brand-13",
+    "url": "works/brand_identity/prod-11.webp",
+    "titulo": "Traslator",
+    "categoria": "1",
+    "link": ""
+  },
+
+  {
+    "cod": "brand-2",
+    "url": "works/brand_identity/prod-2.webp",
+    "titulo": "Cascos y lujos",
+    "categoria": "1",
+    "link": "https://www.behance.net/gallery/190160209/Brand-Cascos-y-lujos-la-cuarta"
+  },
+
   {
     "cod": "brand-4",
     "url": "works/brand_identity/prod-4.webp",
@@ -52,13 +82,6 @@
     "cod": "brand-8",
     "url": "works/brand_identity/prod-8.webp",
     "titulo": "Casita de dulce",
-    "categoria": "1",
-    "link": ""
-  },
-  {
-    "cod": "brand-9",
-    "url": "works/brand_identity/prod-9.webp",
-    "titulo": "Las rellenas de marianita",
     "categoria": "1",
     "link": ""
   },

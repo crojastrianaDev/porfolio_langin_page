@@ -14,7 +14,7 @@ import { OnInit } from '@angular/core';
 export class WorksComponent implements OnInit {
   works: WorkInt[] = [];
   loadWoks: WorkInt[] = [];
-  maxItemsToShow = 10;
+  maxItemsToShow = 20;
   isButtonSelected1 = false;
   isButtonSelected2 = false;
   isButtonSelected3 = false;

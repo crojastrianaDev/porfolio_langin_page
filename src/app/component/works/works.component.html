@@ -79,7 +79,7 @@
             [class.selected]="isButtonSelected3"
             routerLinkActive="active"
             (click)="onClick('3')"
-            >UI Design</a
+            >Web Design</a
           >
           <a
             class="nav-link text-md selected"
@@ -98,7 +98,7 @@
           class="col-sm-6 mb-4 mb-sm-0"
           *ngFor="let work of loadWoks.slice(0, maxItemsToShow)"
         >
-          <div class="card">
+          <div class="card" *ngIf="work.categoria == '1'">
             <img
               src="assets/{{ work.url }}"
               class="card-img-top"

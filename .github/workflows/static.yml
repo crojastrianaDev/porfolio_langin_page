@@ -1,4 +1,4 @@
-name: Deploy Jekyll site to GitHub Pages
+name: Deploy Angular site from docs to GitHub Pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -19,20 +19,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          ruby-version: "3.1"
-          bundler-cache: true
+          node-version: "18"
 
       - name: Install dependencies
-        run: bundle install
+        run: npm install
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
+      - name: Build Angular project
+        run: npm run build -- --output-path=docs --base-href=/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -40,7 +39,8 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: docs
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4

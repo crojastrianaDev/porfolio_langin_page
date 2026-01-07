@@ -1,9 +1,7 @@
-name: Deploy static content to Pages
+name: Deploy Jekyll site to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
-  pull_request:
     branches: ["main"]
   workflow_dispatch:
 
@@ -17,10 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -33,19 +28,19 @@ jobs:
           ruby-version: "3.2"
           bundler-cache: true
 
+      - name: Install dependencies
+        run: bundle install
+
       - name: Build Jekyll site
-        run: |
-          bundle install
-          bundle exec jekyll build -d docs
+        run: bundle exec jekyll build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs
+          path: _site
 
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4

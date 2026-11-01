@@ -1,4 +1,4 @@
-name: Deploy static docs to GitHub Pages
+name: Build and deploy Angular portfolio to GitHub Pages
 
 on:
   push:
@@ -15,21 +15,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Build Angular application
+        run: npm run build-prod
+      - name: Preserve custom domain
+        run: |
+          if [ -f docs/CNAME ]; then cp docs/CNAME dist/porfolio_langin_page/browser/CNAME; fi
       - name: Setup Pages
-        uses: actions/configure-pages@v4
-
+        uses: actions/configure-pages@v5
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs
-
+          path: dist/porfolio_langin_page/browser
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

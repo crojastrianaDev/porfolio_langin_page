@@ -11,13 +11,6 @@
         <nav class="nav">
           <a
             class="nav-link text-md selected"
-            [class.selected]="isButtonSelected1"
-            routerLinkActive="active"
-            (click)="onClick('lDS')"
-            >Logo Design</a
-          >
-          <a
-            class="nav-link text-md selected"
             [class.selected]="isButtonSelected2"
             routerLinkActive="active"
             (click)="onClick('SM')"
@@ -32,9 +25,15 @@
           >
         </nav>
       </div>
+      <div class="row justify-content-center py-5" *ngIf="isOtherSelected">
+        <div class="col-12 text-center">
+          <p class="other-design-copy">Have another design project in mind?</p>
+          <a class="btn btn-primary now other-contact" href="mailto:dannarojasgd@gmail.com?subject=Design%20inquiry">INQUIRE NOW</a>
+        </div>
+      </div>
       <div
         class="row services"
-        *ngIf="services.length == 0 && loanServices.length > 0"
+        *ngIf="!isOtherSelected && services.length == 0 && loanServices.length > 0"
       >
         <div
           class="col-sm-6 mb-4 mb-sm-0"
@@ -76,7 +75,7 @@
           </svg>
         </div>
       </div>
-      <div class="row services" *ngIf="services.length > 0">
+      <div class="row services" *ngIf="!isOtherSelected && services.length > 0">
         <div class="col-sm-6 mb-4 mb-sm-0" *ngFor="let item of services">
           <div class="card card-container" #cardContainer>
             <img

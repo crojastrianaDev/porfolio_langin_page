@@ -32,3 +32,23 @@ section.container-fluid > .row > [class*="col-"] { min-width: 0; }
  .hero-title { font-size:clamp(1.8rem,3vw,2.4rem); }
  .hero-actions .now { width:11.5rem; min-width:11.5rem; }
 }
+
+/* Shared page alignment: hero uses the same centered 1240px content grid as About */
+.hero-section { width:100%; padding:7rem 1.5rem 3rem; }
+.hero-section > .hero-grid { width:100%; max-width:1240px; margin:0 auto; }
+.hero-grid > [class*="col-"] { min-width:0; }
+.hero-image-column .layout { width:100%; margin:0; }
+.hero-image-column .layout img { display:block; width:100%; height:auto; max-height:min(68vh,650px); object-fit:contain; }
+.hero-copy-column .card { width:100%; height:auto; border:0; margin:0; }
+.hero-copy-column .card-body { padding:0; }
+.hero-copy-column .card-title-container { width:100%; max-width:38rem; height:auto; margin:0; padding:0 0 0 1rem; }
+.hero-actions .now, .hero-actions .now.secondary { background:#fd6d0d; border-color:#fd6d0d; color:#fef0d3; }
+.hero-actions .now:hover, .hero-actions .now.secondary:hover { background:#934f4c; border-color:#934f4c; }
+@media(max-width:767px) {
+ .hero-section { padding:5.75rem 1rem 2rem; }
+ .hero-grid { row-gap:1.5rem; }
+ .hero-image-column .layout { max-width:430px; margin:0 auto; }
+ .hero-image-column .layout img { max-height:none; }
+ .hero-copy-column .card-title-container { padding:0; text-align:center; }
+ .hero-copy-column .hero-actions { justify-content:center; }
+}

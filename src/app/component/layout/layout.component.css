@@ -1,0 +1,6 @@
+
+/* Keep fixed navigation from covering anchor targets */
+#home, #works, #services, #about, #contact { scroll-margin-top: 5.5rem; }
+@media (max-width:767px) {
+  #home, #works, #services, #about, #contact { scroll-margin-top: 4.75rem; }
+}

@@ -16,7 +16,7 @@
     <div class="container-fluid flex-column flex-md-row">
       <div class="col-sm-2"></div>
       <div class="col-2 text-start navbar-brand">
-        <a (click)="onClick('home')">
+        <a href="#home" (click)="onClick('home')">
           <span class="icon_home">
             <svg
               class="icon_home"
@@ -52,7 +52,7 @@
                 <a
                   class="nav-link navItem"
                   [class.selected]="isButtonSelected1"
-                  (click)="onClick('works')"
+                  href="#works" (click)="onClick('works')"
                   >Works</a
                 >
               </li>
@@ -60,7 +60,7 @@
                 <a
                   class="nav-link navItem"
                   [class.selected]="isButtonSelected4"
-                  (click)="onClick('services')"
+                  href="#services" (click)="onClick('services')"
                   >Services</a
                 >
               </li>
@@ -68,7 +68,7 @@
                 <a
                   class="nav-link navItem"
                   [class.selected]="isButtonSelected2"
-                  (click)="onClick('about')"
+                  href="#about" (click)="onClick('about')"
                   >About</a
                 >
               </li>
@@ -76,7 +76,7 @@
                 <a
                   class="nav-link navItem"
                   [class.selected]="isButtonSelected3"
-                  (click)="onClick('contact')"
+                  href="#contact" (click)="onClick('contact')"
                   >Contact</a
                 >
               </li>

@@ -52,3 +52,20 @@ section.container-fluid > .row > [class*="col-"] { min-width: 0; }
  .hero-copy-column .card-title-container { padding:0; text-align:center; }
  .hero-copy-column .hero-actions { justify-content:center; }
 }
+
+/* Final alignment and compact banner buttons */
+.hero-section { padding-left:1.5rem; padding-right:1.5rem; }
+.hero-section > .hero-grid { max-width:1240px; margin-left:auto; margin-right:auto; }
+.hero-actions { gap:.65rem; }
+.hero-actions .now, .hero-actions .now.secondary {
+  width:10.5rem; min-width:10.5rem; height:2.65rem; min-height:2.65rem;
+  padding:0 .7rem; border-radius:999px;
+}
+.hero-actions .p-btn { font-size:.82rem; padding:0; line-height:1; }
+.hero-actions .now:hover, .hero-actions .now.secondary:hover { padding:0 .7rem; }
+@media(max-width:767px) {
+ .hero-section { padding-left:1rem; padding-right:1rem; }
+ .hero-actions { gap:.6rem; }
+ .hero-actions .now, .hero-actions .now.secondary { width:10rem; min-width:10rem; height:2.55rem; min-height:2.55rem; }
+ .hero-actions .p-btn { font-size:.78rem; }
+}

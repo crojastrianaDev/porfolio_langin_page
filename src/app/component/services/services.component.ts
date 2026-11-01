@@ -17,6 +17,7 @@ export class ServicesComponent {
   isButtonSelected1 = true;
   isButtonSelected2 = false;
   isButtonSelected3 = false;
+  isOtherSelected = false;
 
   @ViewChild('cardContainer') cardContainer: ElementRef | undefined;
 
@@ -48,6 +49,7 @@ export class ServicesComponent {
     this.isButtonSelected1 = false;
     this.isButtonSelected2 = false;
     this.isButtonSelected3 = false;
+    this.isOtherSelected = category === 'oTDs';
     switch (category) {
       case 'lDS': {
         this.isButtonSelected1 = !this.isButtonSelected1;

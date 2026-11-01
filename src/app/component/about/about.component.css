@@ -194,3 +194,19 @@ h4 {
  .about-content > .col-lg-4, .about-content > .col-lg-6 { flex:0 0 100%; max-width:100%; }
 }
 @media(max-width:767px) { .about-section { padding-left:1rem; padding-right:1rem; } }
+
+/* Final shared grid: same 1240px content edges and 5/7 columns as hero */
+.about-section { width:100%; padding-left:1.5rem; padding-right:1.5rem; }
+.about-section > .content { width:100%; }
+.about-section > .content .child { width:100%; max-width:1240px; margin:.5rem auto 2rem; }
+.about-section > .content .child img { width:100%; height:auto; display:block; }
+.about-section .about-content { display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:2rem; width:100%; max-width:1240px; margin:0 auto; }
+.about-section .about-content > [class*="col-"] { width:auto; max-width:none; flex:none; padding:0; min-width:0; }
+.about-section .about-photo { width:100%; height:auto; max-height:min(68vh,650px); object-fit:contain; object-position:center; }
+.about-section .card { width:100%; max-width:100%; margin:0; }
+.about-section .card-body { padding:0; }
+@media(max-width:767px) {
+ .about-section { padding-left:1rem; padding-right:1rem; }
+ .about-section .about-content { grid-template-columns:minmax(0,1fr); gap:1.25rem; }
+ .about-section .about-photo { max-height:none; }
+}

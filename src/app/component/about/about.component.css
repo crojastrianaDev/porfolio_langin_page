@@ -157,3 +157,27 @@ h4 {
   .about-photo { max-height:60vh; }
   .about-section p { font-size:.92rem; }
 }
+
+/* Consistent About grid, photo and typography */
+.about-section { padding:0 1.5rem 3rem; }
+.about-section > .content { width:100%; }
+.about-section > .content .child { width:100%; max-width:1240px; margin:.5rem auto 2rem; }
+.about-section > .content .child img { display:block; max-width:100%; height:auto; margin:0 auto; }
+.about-content { width:100%; max-width:1240px; margin:0 auto; align-items:center !important; }
+.about-content > [class*="col-"] { display:flex; justify-content:center; min-width:0; }
+.about-photo { display:block; width:100%; height:auto; max-height:min(72vh,720px); object-fit:contain; object-position:center; }
+.about-section .card { width:100%; max-width:100%; margin:0; }
+.about-section .card-body { padding:0; }
+.about-heading { font-size:clamp(1.65rem,2.25vw,2.25rem); line-height:1.08; margin:0 0 .9rem; }
+.about-name { font-size:clamp(1.05rem,1.35vw,1.3rem); margin:0 0 .65rem; }
+.about-section p { font-size:clamp(.88rem,.98vw,.98rem); line-height:1.45; margin:0 0 .72rem; }
+@media (max-width:767px) {
+ .about-section { padding:0 1rem 2rem; }
+ .about-section > .content .child { margin:1rem auto 1.5rem; }
+ .about-content { row-gap:1.25rem !important; }
+ .about-photo { width:100%; max-height:none; }
+ .about-section .card-body { padding:0 .1rem; }
+ .about-heading { font-size:1.7rem; margin-bottom:.8rem; }
+ .about-name { font-size:1.1rem; }
+ .about-section p { font-size:.92rem; line-height:1.48; text-align:left; }
+}

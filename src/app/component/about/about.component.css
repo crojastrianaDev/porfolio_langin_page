@@ -181,3 +181,16 @@ h4 {
  .about-name { font-size:1.1rem; }
  .about-section p { font-size:.92rem; line-height:1.48; text-align:left; }
 }
+
+/* Align the About heading strip and biography to the same page grid as the hero */
+.about-section { padding-left:1.5rem; padding-right:1.5rem; }
+.about-section > .content .child { width:100%; max-width:1240px; margin:.5rem auto 2rem; }
+.about-section > .content .child img { width:100%; max-width:100%; height:auto; display:block; }
+.about-content { width:100%; max-width:1240px; margin:0 auto; }
+.about-content > .col-lg-4 { flex:0 0 41.666667%; max-width:41.666667%; }
+.about-content > .col-lg-6 { flex:0 0 58.333333%; max-width:58.333333%; }
+.about-photo { width:100%; max-width:100%; }
+@media(max-width:991px) {
+ .about-content > .col-lg-4, .about-content > .col-lg-6 { flex:0 0 100%; max-width:100%; }
+}
+@media(max-width:767px) { .about-section { padding-left:1rem; padding-right:1rem; } }

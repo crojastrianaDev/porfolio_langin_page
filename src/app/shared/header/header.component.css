@@ -103,3 +103,71 @@ a {
     margin-right: 1.8em;
   }
 }
+
+
+/* Align header logo and navigation to the same 1240px content grid */
+header .navbar.fixed-top {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+header .navbar.fixed-top > .container-fluid {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1240px;
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 0 1.5rem !important;
+  box-sizing: border-box;
+}
+header .navbar.fixed-top > .container-fluid > .col-sm-2:first-child,
+header .navbar.fixed-top > .container-fluid > .col-sm-2:nth-child(3),
+header .navbar.fixed-top > .container-fluid > .col-sm-4 {
+  display: none !important;
+}
+header .navbar.fixed-top > .container-fluid > .navbar-brand {
+  display: block;
+  flex: 0 0 auto;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+header .navbar.fixed-top > .container-fluid > .col-sm-2:nth-child(4) {
+  display: flex;
+  flex: 0 0 auto;
+  width: auto;
+  padding: 0;
+  margin-left: auto;
+}
+header .navbar.fixed-top .navbar-collapse {
+  flex-grow: 0;
+}
+header .navbar.fixed-top .navbar-nav {
+  align-items: center;
+}
+header .navbar.fixed-top .navbar-nav.text-end {
+  gap: .4rem;
+}
+header .navbar.fixed-top .navItem {
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  header .navbar.fixed-top > .container-fluid {
+    min-height: 60px;
+    padding: 0 1rem !important;
+  }
+  header .navbar.fixed-top > .container-fluid > .navbar-brand {
+    display: none;
+  }
+  header .navbar.fixed-top > .container-fluid > .col-sm-2:nth-child(4) {
+    width: 100%;
+  }
+  header .navbar-toggler {
+    position: absolute;
+    left: 1rem;
+    top: .5rem;
+  }
+}

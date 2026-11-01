@@ -42,3 +42,11 @@ body {
 .btn.btn-primary.now, .btn.btn-primary.other-contact, .other-contact { background-color:#fd6d0d; border-color:#fd6d0d; color:#fef0d3; }
 .btn.btn-primary.now:hover, .btn.btn-primary.other-contact:hover, .other-contact:hover { background-color:#934f4c; border-color:#934f4c; color:#fef0d3; }
 .btn.btn-primary.now:focus-visible, .btn.btn-primary.other-contact:focus-visible, .other-contact:focus-visible { outline:3px solid rgba(147,79,76,.35); outline-offset:3px; }
+
+/* Shared action button dimensions and palette across the site */
+.btn.btn-primary.now, .btn.btn-primary.other-contact, .other-contact {
+  background:#fd6d0d; border-color:#fd6d0d; color:#fef0d3;
+}
+.btn.btn-primary.now:hover, .btn.btn-primary.other-contact:hover, .other-contact:hover {
+  background:#934f4c; border-color:#934f4c; color:#fef0d3;
+}

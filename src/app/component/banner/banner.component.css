@@ -69,3 +69,14 @@ section.container-fluid > .row > [class*="col-"] { min-width: 0; }
  .hero-actions .now, .hero-actions .now.secondary { width:10rem; min-width:10rem; height:2.55rem; min-height:2.55rem; }
  .hero-actions .p-btn { font-size:.78rem; }
 }
+
+/* Final shared CTA treatment: uniform color and proportional sizing */
+.hero-actions .btn.btn-primary.now,
+.hero-actions .btn.btn-primary.now:visited { background:#fd6d0d; border-color:#fd6d0d; color:#fef0d3; }
+.hero-actions .btn.btn-primary.now:hover { background:#934f4c; border-color:#934f4c; color:#fef0d3; }
+.hero-actions .btn.btn-primary.now { width:12rem; min-width:12rem; height:3rem; min-height:3rem; padding:0 1rem; }
+.hero-actions .btn.btn-primary.now .p-btn { font-size:.9rem; }
+@media(max-width:767px) {
+ .hero-actions .btn.btn-primary.now { width:10.5rem; min-width:10.5rem; height:2.8rem; min-height:2.8rem; }
+ .hero-actions .btn.btn-primary.now .p-btn { font-size:.82rem; }
+}

@@ -265,3 +265,7 @@ a:link {
 
 .other-design-copy{color:#515151;font-family:Outfit,sans-serif;font-size:1.4rem;margin-bottom:1.2rem}
 .other-contact{position:static;display:inline-block;width:auto;padding:.8rem 1.6rem;color:#fef0d3;text-decoration:none}
+
+/* Normalize all primary calls to action across the site */
+.services .button-container .now, .other-contact { background:#fd6d0d; border-color:#fd6d0d; color:#fef0d3; }
+.services .button-container .now:hover, .other-contact:hover { background:#934f4c; border-color:#934f4c; color:#fef0d3; }

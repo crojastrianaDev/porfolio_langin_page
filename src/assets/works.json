@@ -28,13 +28,6 @@
     "link": "https://www.behance.net/gallery/189417039/Globox-sas"
   },
   {
-    "cod": "brand-13",
-    "url": "works/brand_identity/prod-13.webp",
-    "titulo": "Industry X",
-    "categoria": "1",
-    "link": ""
-  },
-  {
     "cod": "brand-3",
     "url": "works/brand_identity/prod-3.webp",
     "titulo": "Buena papa Salchipaperia",
@@ -48,7 +41,6 @@
     "categoria": "1",
     "link": "https://www.instagram.com/p/C9LakqDSgTV/"
   },
-
   {
     "cod": "brand-2",
     "url": "works/brand_identity/prod-2.webp",
@@ -56,63 +48,12 @@
     "categoria": "1",
     "link": "https://www.behance.net/gallery/190160209/Brand-Cascos-y-lujos-la-cuarta"
   },
-
-  {
-    "cod": "brand-14",
-    "url": "works/brand_identity/prod-14.webp",
-    "titulo": "El trinunfo",
-    "categoria": "1",
-    "link": "https://www.instagram.com/p/C5zOUxWvI6E/?img_index=1"
-  },
-
-  {
-    "cod": "brand-4",
-    "url": "works/brand_identity/prod-4.webp",
-    "titulo": "Caldi café",
-    "categoria": "1",
-    "link": "https://www.instagram.com/p/C5MPyAtyZhw/"
-  },
-  {
-    "cod": "brand-5",
-    "url": "works/brand_identity/prod-5.webp",
-    "titulo": "Sould posse",
-    "categoria": "1",
-    "link": "https://www.instagram.com/p/DGyyIV4SyIs/?img_index=1"
-  },
-  {
-    "cod": "brand-6",
-    "url": "works/brand_identity/prod-6.webp",
-    "titulo": "Wise childre",
-    "categoria": "1",
-    "link": ""
-  },
   {
     "cod": "brand-7",
     "url": "works/brand_identity/prod-7.webp",
     "titulo": "Luxo kids",
     "categoria": "1",
     "link": "https://www.instagram.com/p/C4jb0yLvjWj/"
-  },
-  {
-    "cod": "brand-8",
-    "url": "works/brand_identity/prod-8.webp",
-    "titulo": "Casita de dulce",
-    "categoria": "1",
-    "link": ""
-  },
-  {
-    "cod": "social-1",
-    "url": "works/social_media/prod-11.webp",
-    "titulo": "Contaduria",
-    "categoria": "2",
-    "link": "https://www.behance.net/gallery/192407639/Project-for-a-public-accountant"
-  },
-  {
-    "cod": "social-2",
-    "url": "works/social_media/prod-12.webp",
-    "titulo": "Salchipaperia",
-    "categoria": "2",
-    "link": "https://www.behance.net/gallery/193499601/Brandboard-Buena-Papa-Salchipaperia"
   },
   {
     "cod": "social-3",
@@ -142,7 +83,6 @@
     "categoria": "2",
     "link": ""
   },
-
   {
     "cod": "ui-3",
     "url": "works/ux/prod-19.webp",
@@ -150,7 +90,6 @@
     "categoria": "3",
     "link": "https://www.behance.net/gallery/204982365/Rotri-Reposteria-Web-Design-UI-Pagina-web"
   },
-
   {
     "cod": "ui-4",
     "url": "works/ux/prod-20.webp",
@@ -165,7 +104,6 @@
     "categoria": "3",
     "link": ""
   },
-
   {
     "cod": "ui-2",
     "url": "works/ux/prod-18.webp",
@@ -173,7 +111,6 @@
     "categoria": "3",
     "link": ""
   },
-
   {
     "cod": "other-1",
     "url": "works/other/prod-21.webp",

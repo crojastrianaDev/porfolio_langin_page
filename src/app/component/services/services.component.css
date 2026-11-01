@@ -269,3 +269,14 @@ a:link {
 /* Normalize all primary calls to action across the site */
 .services .button-container .now, .other-contact { background:#fd6d0d; border-color:#fd6d0d; color:#fef0d3; }
 .services .button-container .now:hover, .other-contact:hover { background:#934f4c; border-color:#934f4c; color:#fef0d3; }
+
+/* Keep service-card and Other CTA buttons consistent with the banner */
+.services .button-container .btn.btn-primary.now,
+.other-contact { width:12rem; min-width:12rem; height:3rem; min-height:3rem; padding:0 1rem; display:inline-flex; align-items:center; justify-content:center; border-radius:999px; font:700 .9rem/1 Outfit,sans-serif; background:#fd6d0d; border-color:#fd6d0d; color:#fef0d3; }
+.services .button-container .btn.btn-primary.now .p-btn { font-size:.9rem; padding:0; line-height:1; }
+.services .button-container .btn.btn-primary.now:hover,
+.other-contact:hover { background:#934f4c; border-color:#934f4c; color:#fef0d3; padding:0 1rem; }
+@media(max-width:767px) {
+ .services .button-container .btn.btn-primary.now,
+ .other-contact { width:10.5rem; min-width:10.5rem; height:2.8rem; min-height:2.8rem; }
+}

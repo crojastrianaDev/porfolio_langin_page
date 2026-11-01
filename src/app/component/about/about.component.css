@@ -1,26 +1,32 @@
-/* About uses the same centered 1240px grid and 12-column proportions as the banner. */
+/* About section follows the existing hero/banner content grid. */
 .about-section {
   width: 100%;
+  box-sizing: border-box;
   padding: 0 1.5rem 3rem;
-  box-sizing: border-box;
-  overflow: clip;
 }
 
-.about-section .about-inner {
-  width: 100%;
+.about-section > .content,
+.about-section .about-content {
+  width: calc(100% - 1.5rem);
   max-width: 1240px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
 }
 
-.about-section .about-title {
+.about-section > .content {
+  display: flex;
+  justify-content: center;
+}
+
+.about-section > .content .child {
   width: 100%;
-  padding: 0 .75rem;
   margin: .5rem 0 2rem;
+  padding: 0 .75rem;
   box-sizing: border-box;
 }
 
-.about-section .about-title img {
+.about-section > .content .child img {
   display: block;
   width: 100%;
   height: auto;
@@ -30,17 +36,14 @@
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   align-items: center;
-  width: 100%;
-  margin: 0;
+  column-gap: 2rem;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.about-section .about-photo-column,
-.about-section .about-copy-column {
-  min-width: 0;
+.about-section .about-content > [class*="col-"] {
   width: auto;
-  max-width: 100%;
+  max-width: none;
+  min-width: 0;
   padding: 0 .75rem;
   margin: 0;
   box-sizing: border-box;
@@ -56,18 +59,16 @@
   object-position: center;
 }
 
-.about-section .card,
-.about-section .card-body {
-  display: block;
+.about-section .card {
   width: 100%;
   max-width: 100%;
-  min-width: 0;
   margin: 0;
   padding: 0;
   border: 0;
   background: transparent;
-  box-sizing: border-box;
 }
+
+.about-section .card-body { width: 100%; padding: 0; }
 
 .about-section .about-heading {
   margin: 0 0 .9rem;
@@ -87,7 +88,6 @@
 }
 
 .about-section p {
-  max-width: 100%;
   margin: 0 0 .72rem;
   color: #515151;
   font-family: Outfit, sans-serif;
@@ -95,15 +95,27 @@
   font-weight: 400;
   line-height: 1.45;
   text-align: left;
-  overflow-wrap: break-word;
 }
 
 @media (max-width: 767px) {
   .about-section { padding: 0 1rem 2rem; }
-  .about-section .about-title { padding: 0; margin: 1rem 0 1.5rem; }
-  .about-section .about-content { grid-template-columns: minmax(0, 1fr); row-gap: 1.25rem; }
-  .about-section .about-photo-column,
-  .about-section .about-copy-column { padding: 0; }
+
+  .about-section > .content,
+  .about-section .about-content {
+    width: 100%;
+  }
+
+  .about-section > .content .child {
+    margin: 1rem 0 1.5rem;
+    padding: 0;
+  }
+
+  .about-section .about-content {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 1.25rem;
+  }
+
+  .about-section .about-content > [class*="col-"] { padding: 0; }
   .about-section .about-photo { max-height: none; }
   .about-section .about-heading { font-size: 1.7rem; margin-bottom: .8rem; }
   .about-section .about-name { font-size: 1.1rem; }

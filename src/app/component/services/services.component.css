@@ -13,12 +13,11 @@ h4 {
   text-shadow: grey 0 1px;
 }
 .navbar-container {
-  flex-direction: row; /* Establecer la dirección de flexión a horizontal */
+  flex-direction: row;
   margin-left: 0em;
 }
-
 .nav {
-  flex-direction: row; /* Si es necesario, ajusta la dirección de flexión del menú */
+  flex-direction: row;
   margin-top: 0.1em;
   margin-bottom: 1.5em;
 }
@@ -33,9 +32,7 @@ h4 {
   padding-right: 0px;
   margin-right: 2.4em;
 }
-a {
-  cursor: pointer;
-}
+a { cursor: pointer; }
 a.selected:hover {
   padding-left: 0.5em;
   padding-right: 0.5em;
@@ -44,7 +41,6 @@ a.selected:hover {
   background: var(--Tono2, #fd6d0d);
   color: #fef0d3;
 }
-
 a.selected {
   padding-left: 0.5em;
   padding-right: 0.5em;
@@ -60,13 +56,8 @@ a.selected {
   height: 100%;
   margin-top: 4em;
 }
-.icon_finish svg {
-  max-width: 100%;
-  height: auto;
-}
-.container-fluid {
-  position: relative;
-}
+.icon_finish svg { max-width: 100%; height: auto; }
+.container-fluid { position: relative; }
 .card {
   margin-top: 1.5em;
   border-radius: 2em;
@@ -78,13 +69,7 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 1.3em;
-  /*display: block;*/
 }
-/*.p:hover {
-  border-color: #934f4c;
-  background-color: #934f4c;
-  padding: 0.5em;
-}*/
 .now:hover {
   border-color: #934f4c;
   background-color: #934f4c;
@@ -95,15 +80,10 @@ p {
   background: var(--Tono2, #fd6d0d);
   border-color: #fd6d0d;
   position: absolute;
-  left: calc(44.275em / 2 - 2.5em);
+  left: 50%;
+  transform: translateX(-50%);
   height: auto;
   width: 10em;
-  /*op: calc(61.25em / 2 - 0.625em);*/
-}
-.now:hover {
-  border-color: #934f4c;
-  background-color: #934f4c;
-  padding: 0.5em;
 }
 .btn-layout {
   display: flex;
@@ -117,7 +97,6 @@ p {
 .p-btn {
   color: var(--Tono1, #fef0d3);
   text-align: center;
-  /* Boton1 */
   font-family: Outfit, sans-serif;
   font-size: 1.3em;
   font-style: normal;
@@ -125,32 +104,24 @@ p {
   line-height: normal;
   padding: 0.5em;
 }
-a:link {
-  text-decoration: none;
-}
+a:link { text-decoration: none; }
 .card-container {
   position: relative;
+  height: 100%;
 }
 .button-container {
   position: absolute;
-  bottom: 1.3em; /* Alinea el contenedor del botón en la mitad vertical */
-  left: -8%;
-  margin-left: 1em;
+  bottom: 1.3em;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
 }
-@media screen and (max-width: 812px) {
-  .mb-4 {
-    margin-bottom: 0em !important;
-  }
-  .navbar-container {
-    flex-direction: row; /* Establecer la dirección de flexión a horizontal */
-    margin-left: 0em;
-  }
 
-  .nav {
-    flex-direction: row; /* Si es necesario, ajusta la dirección de flexión del menú */
-    margin-top: 0.1em;
-    margin-bottom: 1.5em;
-  }
+@media screen and (max-width: 812px) {
+  .mb-4 { margin-bottom: 0em !important; }
+  .navbar-container { flex-direction: row; margin-left: 0em; }
+  .nav { flex-direction: row; margin-top: 0.1em; margin-bottom: 1.5em; }
   .nav-link {
     color: var(--Tono2, #fd6d0d);
     font-family: Outfit, sans-serif;
@@ -162,10 +133,8 @@ a:link {
     padding-right: 0.8em;
     margin-right: 0em;
   }
-  a {
-    cursor: pointer;
-  }
-  a.selected:hover a.selected {
+  a { cursor: pointer; }
+  a.selected:hover, a.selected {
     padding-left: 0.5em;
     padding-right: 0.5em;
     border-radius: 3em;
@@ -173,17 +142,11 @@ a:link {
     background: var(--Tono2, #fd6d0d);
     color: #fef0d3;
   }
-  .child {
-    margin-top: 4.5em;
-    margin-bottom: 2em;
-  }
-  .card {
-    margin-top: 1.2em;
-  }
+  .child { margin-top: 4.5em; margin-bottom: 2em; }
+  .card { margin-top: 1.2em; }
   .p-btn {
     color: var(--Tono1, #fef0d3);
     text-align: center;
-    /* Boton1 */
     font-family: Outfit, sans-serif;
     font-size: 1em;
     font-style: normal;
@@ -195,25 +158,18 @@ a:link {
     border-radius: 4em;
     background: var(--Tono2, #fd6d0d);
     border-color: #fd6d0d;
-    position: initial;
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
+    position: static;
+    transform: none;
+    width: 10em;
+    margin: 0;
   }
   .button-container {
     display: flex;
     justify-content: center;
-    position: initial;
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
+    position: static;
+    margin: 0;
   }
-
-  .content {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
+  .content { width: 100%; max-width: 400px; height: auto; }
 }
 
 @media screen and (min-width: 1920px) {
@@ -227,17 +183,11 @@ a:link {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .child {
-    margin-top: 4.5;
-    margin-bottom: 3em;
-  }
-  .card {
-    margin-top: 0.5em;
-  }
+  .child { margin-top: 4.5em; margin-bottom: 3em; }
+  .card { margin-top: 0.5em; }
   .p-btn {
     color: var(--Tono1, #fef0d3);
     text-align: center;
-    /* Boton1 */
     font-family: Outfit, sans-serif;
     font-size: 1.8em;
     font-style: normal;
@@ -245,38 +195,35 @@ a:link {
     line-height: normal;
     padding: 0.5em;
   }
-  .now {
-    border-radius: 4em;
-    background: var(--Tono2, #fd6d0d);
-    border-color: #fd6d0d;
-    position: absolute;
-    left: calc(44.275em / 2 - 2.5em);
-    height: auto;
-    width: 13em;
-    /*op: calc(61.25em / 2 - 0.625em);*/
-  }
-  .button-container {
-    position: absolute;
-    bottom: 1.3em; /* Alinea el contenedor del botón en la mitad vertical */
-    left: 2em;
-    margin-left: 1em;
-  }
+  .now { width: 13em; }
+  .button-container { bottom: 1.3em; }
 }
 
-.other-design-copy{color:#515151;font-family:Outfit,sans-serif;font-size:1.4rem;margin-bottom:1.2rem}
-.other-contact{position:static;display:inline-block;width:auto;padding:.8rem 1.6rem;color:#fef0d3;text-decoration:none}
+.other-design-copy { color: #515151; font-family: Outfit, sans-serif; font-size: 1.4rem; margin-bottom: 1.2rem; }
+.other-contact { position: static; display: inline-block; width: auto; padding: .8rem 1.6rem; color: #fef0d3; text-decoration: none; }
 
-/* Normalize all primary calls to action across the site */
-.services .button-container .now, .other-contact { background:#fd6d0d; border-color:#fd6d0d; color:#fef0d3; }
-.services .button-container .now:hover, .other-contact:hover { background:#934f4c; border-color:#934f4c; color:#fef0d3; }
-
-/* Keep service-card and Other CTA buttons consistent with the banner */
+/* Keep CTA buttons consistent with the banner */
 .services .button-container .btn.btn-primary.now,
-.other-contact { width:12rem; min-width:12rem; height:3rem; min-height:3rem; padding:0 1rem; display:inline-flex; align-items:center; justify-content:center; border-radius:999px; font:700 .9rem/1 Outfit,sans-serif; background:#fd6d0d; border-color:#fd6d0d; color:#fef0d3; }
-.services .button-container .btn.btn-primary.now .p-btn { font-size:.9rem; padding:0; line-height:1; }
+.other-contact {
+  width: 12rem;
+  min-width: 12rem;
+  height: 3rem;
+  min-height: 3rem;
+  padding: 0 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font: 700 .9rem/1 Outfit, sans-serif;
+  background: #fd6d0d;
+  border-color: #fd6d0d;
+  color: #fef0d3;
+}
+.services .button-container .btn.btn-primary.now .p-btn { font-size: .9rem; padding: 0; line-height: 1; }
 .services .button-container .btn.btn-primary.now:hover,
-.other-contact:hover { background:#934f4c; border-color:#934f4c; color:#fef0d3; padding:0 1rem; }
+.other-contact:hover { background: #934f4c; border-color: #934f4c; color: #fef0d3; padding: 0 1rem; }
+
 @media(max-width:767px) {
- .services .button-container .btn.btn-primary.now,
- .other-contact { width:10.5rem; min-width:10.5rem; height:2.8rem; min-height:2.8rem; }
+  .services .button-container .btn.btn-primary.now,
+  .other-contact { width: 10.5rem; min-width: 10.5rem; height: 2.8rem; min-height: 2.8rem; }
 }

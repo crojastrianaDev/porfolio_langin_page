@@ -1,51 +1,38 @@
-/* About section follows the existing hero/banner content grid. */
+/* Match the shared Works section container and content alignment. */
 .about-section {
   width: 100%;
   box-sizing: border-box;
-  padding: 0 1.5rem 3rem;
 }
 
-.about-section > .content,
-.about-section .about-content {
-  width: calc(100% - 1.5rem);
-  max-width: 1240px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
-
-.about-section > .content {
+.about-section .content {
   display: flex;
   justify-content: center;
 }
 
-.about-section > .content .child {
+.about-section .child {
   width: 100%;
-  margin: .5rem 0 2rem;
-  padding: 0 .75rem;
+  max-width: 100%;
+  margin: 4.5em 0 3em;
+  padding: 0 1rem;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
-.about-section > .content .child img {
+.about-section .child img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .about-section .about-content {
-  display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  align-items: center;
-  column-gap: 2rem;
-  padding: 0;
+  margin: 0;
+  row-gap: 1.5rem;
 }
 
 .about-section .about-content > [class*="col-"] {
-  width: auto;
-  max-width: none;
   min-width: 0;
-  padding: 0 .75rem;
-  margin: 0;
   box-sizing: border-box;
 }
 
@@ -61,14 +48,16 @@
 
 .about-section .card {
   width: 100%;
-  max-width: 100%;
   margin: 0;
   padding: 0;
   border: 0;
   background: transparent;
 }
 
-.about-section .card-body { width: 100%; padding: 0; }
+.about-section .card-body {
+  width: 100%;
+  padding: 0;
+}
 
 .about-section .about-heading {
   margin: 0 0 .9rem;
@@ -98,30 +87,36 @@
 }
 
 @media (max-width: 767px) {
-  .about-section { padding: 0 1rem 2rem; }
-
-  .about-section > .content,
-  .about-section .about-content {
-    width: 100%;
-  }
-
-  .about-section > .content .child {
-    margin: 1rem 0 1.5rem;
-    padding: 0;
+  .about-section .child {
+    margin: 4.5em 0 2em;
+    padding: 0 .75rem;
   }
 
   .about-section .about-content {
-    grid-template-columns: minmax(0, 1fr);
     row-gap: 1.25rem;
   }
 
-  .about-section .about-content > [class*="col-"] { padding: 0; }
-  .about-section .about-photo { max-height: none; }
-  .about-section .about-heading { font-size: 1.7rem; margin-bottom: .8rem; }
-  .about-section .about-name { font-size: 1.1rem; }
-  .about-section p { font-size: .92rem; line-height: 1.48; }
+  .about-section .about-photo {
+    max-height: none;
+  }
+
+  .about-section .about-heading {
+    font-size: 1.7rem;
+    margin-bottom: .8rem;
+  }
+
+  .about-section .about-name {
+    font-size: 1.1rem;
+  }
+
+  .about-section p {
+    font-size: .92rem;
+    line-height: 1.48;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .about-section p { font-size: .92rem; }
+  .about-section p {
+    font-size: .92rem;
+  }
 }

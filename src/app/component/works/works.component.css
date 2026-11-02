@@ -289,3 +289,10 @@ h4 {
 
 /* Consistent, undistorted section heading artwork */
 .container-fluid > .content .child > img { display:block; width:min(300px, 100%); height:60px; object-fit:contain; }
+
+
+/* Shared vertical rhythm for Works, Services and About section titles */
+.container-fluid > .content > .child { margin: 4.5em auto 2.5em; }
+@media (max-width: 812px) {
+  .container-fluid > .content > .child { margin: 4.5em auto 2.5em; }
+}

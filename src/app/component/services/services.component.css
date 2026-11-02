@@ -227,3 +227,11 @@ a:link { text-decoration: none; }
   .services .button-container .btn.btn-primary.now,
   .other-contact { width: 10.5rem; min-width: 10.5rem; height: 2.8rem; min-height: 2.8rem; }
 }
+
+/* Consistent, undistorted section heading artwork */
+.services-section-title-placeholder { width: min(300px, 100%); height: auto; object-fit: contain; }
+.container-fluid > .content .child > img { display:block; width:min(300px, 100%); height:60px; object-fit:contain; }
+.navbar-container .nav { display:flex; align-items:center; gap:1.25rem; }
+.navbar-container .nav-link { display:inline-flex; align-items:center; margin:0; padding:.5rem .75rem; }
+.navbar-container .nav-link.selected { padding:.5rem .75rem; }
+@media(max-width:812px) { .navbar-container .nav { gap:.4rem; flex-wrap:wrap; } .navbar-container .nav-link { padding:.45rem .6rem; } }

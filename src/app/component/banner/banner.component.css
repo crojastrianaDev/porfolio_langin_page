@@ -8,7 +8,7 @@ section.container-fluid > .row > [class*="col-"] { min-width: 0; }
 .card-title-container { width: 100%; max-width: 38rem; height: auto; margin: 0 auto; padding: 0; }
 .hero-eyebrow { font-size: clamp(.85rem, 1.1vw, 1rem); }
 .hero-title { font-size: clamp(1.9rem, 3vw, 3rem); line-height: 1.06; }
-.hero-subtitle { font-size: clamp(1.05rem, 1.55vw, 1.35rem); line-height: 1.3; }
+.hero-subtitle { font-size: clamp(1.1rem, calc(1.55vw + 1px), calc(1.35rem + 1px)); line-height: 1.3; }
 .hero-description { font-size: clamp(.92rem, 1.05vw, 1rem); line-height: 1.5; }
 .hero-actions { display:flex; flex-wrap:wrap; gap:.85rem; align-items:center; }
 .hero-actions .now, .services .button-container .now, .other-contact { box-sizing:border-box; width:13rem; min-width:13rem; height:3.15rem; min-height:3.15rem; padding:0 1rem; display:inline-flex; align-items:center; justify-content:center; border-radius:999px; }

@@ -128,3 +128,11 @@
     font-size: .92rem;
   }
 }
+
+/* Match the same title spacing used by Works and Services and leave room before the footer */
+.about-section .content > .child { margin: 4.5em auto 2.5em; }
+.about-section { padding-bottom: 4rem; }
+@media (max-width: 767px) {
+  .about-section .content > .child { margin: 4.5em auto 2.5em; }
+  .about-section { padding-bottom: 3rem; }
+}

@@ -80,3 +80,8 @@ section.container-fluid > .row > [class*="col-"] { min-width: 0; }
  .hero-actions .btn.btn-primary.now { width:10.5rem; min-width:10.5rem; height:2.8rem; min-height:2.8rem; }
  .hero-actions .btn.btn-primary.now .p-btn { font-size:.82rem; }
 }
+
+
+/* Keep the requested desktop line break while allowing natural wrapping on small screens */
+.hero-subtitle-break { display: block; }
+@media (max-width: 767px) { .hero-subtitle-break { display: none; } }

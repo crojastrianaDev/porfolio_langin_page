@@ -242,3 +242,11 @@ a:link { text-decoration: none; }
 @media (max-width: 812px) {
   .container-fluid > .content > .child { margin: 4.5em auto 2.5em; }
 }
+
+
+/* Match the decorative divider spacing used beneath Works */
+.icon_finish { margin-top: 3em; }
+.icon_finish svg { display: block; }
+
+/* Keep the Other Design callout centered independently of Bootstrap text utilities */
+.other-design-copy { display: block; width: 100%; text-align: center; margin-left: auto; margin-right: auto; }

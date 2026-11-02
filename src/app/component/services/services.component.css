@@ -235,3 +235,10 @@ a:link { text-decoration: none; }
 .navbar-container .nav-link { display:inline-flex; align-items:center; margin:0; padding:.5rem .75rem; }
 .navbar-container .nav-link.selected { padding:.5rem .75rem; }
 @media(max-width:812px) { .navbar-container .nav { gap:.4rem; flex-wrap:wrap; } .navbar-container .nav-link { padding:.45rem .6rem; } }
+
+
+/* Shared vertical rhythm for Works, Services and About section titles */
+.container-fluid > .content > .child { margin: 4.5em auto 2.5em; }
+@media (max-width: 812px) {
+  .container-fluid > .content > .child { margin: 4.5em auto 2.5em; }
+}

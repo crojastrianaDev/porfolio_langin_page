@@ -250,3 +250,31 @@ a:link { text-decoration: none; }
 
 /* Keep the Other Design callout centered independently of Bootstrap text utilities */
 .other-design-copy { display: block; width: 100%; text-align: center; margin-left: auto; margin-right: auto; }
+
+
+/* Extra breathing room before the decorative wave below Services */
+.services .icon_finish {
+  margin-top: 4.5rem;
+  padding-top: 0;
+}
+
+/* Center the Other Design message and CTA as a single vertical group */
+.other-design-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.other-design-content .other-design-copy {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 1.2rem;
+  text-align: center;
+}
+.other-design-content .other-contact {
+  align-self: center;
+  margin: 0 auto;
+}

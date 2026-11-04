@@ -279,3 +279,34 @@ a:link { text-decoration: none; }
   align-self: center;
   margin: 0 auto;
 }
+
+
+/* Force the Other Design CTA onto the same horizontal center axis as its copy.
+   .now defines absolute positioning for service-card buttons, so reset it here. */
+.other-design-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.other-design-content .other-contact {
+  position: relative !important;
+  inset-inline: auto !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  display: flex !important;
+  align-self: center !important;
+  margin-inline: auto !important;
+  flex: 0 0 12rem;
+  width: 12rem;
+  min-width: 12rem;
+}
+@media (max-width: 767px) {
+  .other-design-content .other-contact {
+    flex-basis: 10.5rem;
+    width: 10.5rem;
+    min-width: 10.5rem;
+  }
+}

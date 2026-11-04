@@ -269,8 +269,9 @@ a:link { text-decoration: none; }
 }
 .other-design-content .other-design-copy {
   display: block;
-  width: 100%;
+  width: max-content;
   max-width: 100%;
+  align-self: center;
   margin: 0 auto 1.2rem;
   text-align: center;
 }

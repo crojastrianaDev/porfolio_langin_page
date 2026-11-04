@@ -310,3 +310,42 @@ a:link { text-decoration: none; }
     min-width: 10.5rem;
   }
 }
+
+
+/* Restore the intended pill-shaped Other Design CTA; center it without changing card buttons. */
+.other-design-content a.btn.btn-primary.now.other-contact {
+  box-sizing: border-box !important;
+  position: static !important;
+  inset: auto !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  aspect-ratio: auto !important;
+  display: inline-flex !important;
+  flex: 0 0 12rem !important;
+  width: 12rem !important;
+  min-width: 12rem !important;
+  max-width: 12rem !important;
+  height: 3rem !important;
+  min-height: 3rem !important;
+  max-height: 3rem !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  border-radius: 999px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+}
+@media (max-width: 767px) {
+  .other-design-content a.btn.btn-primary.now.other-contact {
+    flex-basis: 10.5rem !important;
+    width: 10.5rem !important;
+    min-width: 10.5rem !important;
+    max-width: 10.5rem !important;
+    height: 2.8rem !important;
+    min-height: 2.8rem !important;
+    max-height: 2.8rem !important;
+  }
+}
